@@ -1,0 +1,74 @@
+h1 {
+    color:darkred;
+}
+h2 {
+    color:darkred;
+}
+th {
+    text-align:left;
+}
+body {
+    margin:0% 10%;
+    padding: 60px 40px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:16px;
+}
+span {
+    color:red;
+}
+.yellowbutton {
+    background-color:#f5f2b8;
+    font-weight:bold;
+    border-radius: 10px;
+    padding:10px;
+    margin:10px;
+}
+.redbutton {
+    background-color:#f24033;
+    font-weight:bold;
+    border-radius: 10px;
+    padding:10px;
+    margin:10px;
+}
+
+.fixed-header, .fixed-footer{
+    width: 100%;
+    position: fixed;        
+    background: #fff;
+    padding: 10px 0;
+    color: #fff;
+}
+.fixed-header{
+    top: 0;
+}
+.fixed-footer{
+    bottom: 0;
+}
+.container{
+    width: 80%;
+    margin: 0 10px; 
+}
+
+.ProductIcon {
+    height:100px;
+    width:120px;
+}
+
+.flexPackageContainer {
+    display: flex;
+    height: 200px;
+    flex-direction: row;
+}
+
+
+.flexPackageContainer > div {
+    margin:20px;
+    padding:0px 50px;
+}
+
+.flexPackageItem {
+   flex-basis:auto;
+   text-align:center;
+   height:20px;
+   width:20px;
+}
