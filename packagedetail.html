@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE-edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Packages</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="pkgstyles.css">
 
     </head>
     <body>
@@ -19,51 +19,23 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="package.html">Packages</a></li>
-                    <li><a href="#">Login</a></li>
-                    <li><label for="hsearch">Search: </label></li>
-                    <li><input type="search" id="hsearch" name="hsearch"></li>
+                    <li><a href="form.html">Form</a></li>
+                    <li>
+                        <form>
+                            <input type="text" placeholder="Search" id="search_text" name="search_text">
+                            <button type="submit">Search</button>
+                        </form>
+                    </li>
                 </ul>    
             </nav>
         </header>
+    
+    <section>
+        <p>All our venue decoration packages are inclusive of delivery, setup and tear down services within the same day.</p>
+        <b>To book, call us at <span>+65 63335888 </span>or email us at <span style="color:red">jadteamsg@gmail.com</span> today!</b>
+    </section>
 
-        <section>
-            <h1>Our Products and Services</h1>
-            <p>Looking for a fuss-free decoration package for your upcoming special occasion? We got the perfect solution for you! With a customisable range of decoration packages to choose from, you will be sure to find one that is suitable for your needs! Scroll down to find out more!</p>
-            <b>To book, call us at <span>+65 63335888 </span>or email us at <span style="color:red">jadteamsg@gmail.com</span> today!</b>
-        </section>
-
-            <fieldset>
-                <legend><h2>Venue Decoration Packages</h2></legend>
-                    <div class="flexContainer">
-                        <div class="flexItem"><a href="#classic"><img src="images/classic_pirate.jpg" class="ProductIcon"><br />Classic S$300</a></div>
-                        <div class="flexItem"><a href="#deluxe"><img src="images/deluxe_autumn.jpg" class="ProductIcon"><br />Deluxe S$500</a></div>
-                        <div class="flexItem"><a href="#grand"><img src="images/grand_deco.jpg" class="ProductIcon"><br />Grand S$750</a></div>
-                        <div class="flexItem"><a href="#elegance"><img src="images/elegance_blue.jpg" class="ProductIcon"><br />ELegance S$1000</a></div>
-                    </div>
-            </fieldset>
-
-            <fieldset>
-                <legend><h2>Add-ons</h2></legend>
-                    <div class="flexContainer">
-                        <div class="flexItem"><a href="#"><img src="images/ballpit_slide.jpg" class="ProductIcon"><br />Ball Pit Rental S$50/hr</a></div>
-                        <div class="flexItem"><a href="#"><img src="images/cakes.jpg" class="ProductIcon"><br />Cake for 20pax S$150</a></div>
-                        <div class="flexItem"><a href="#"><img src="images/balloon_sculptures.jpg" class="ProductIcon"><br />Balloon Sculptures S$100</a></div>
-                        <div class="flexItem"><a href="#"><img src="images/acrylic_display.jpg" class="ProductIcon"><br />Acrylic Display S$180</a></div>
-                    </div>
-             </fieldset>
-
-            <fieldset>
-                <legend><h2>Services</h2></legend>
-                    <div class="flexContainer">
-                        <div class="flexItem"><a href="#"><img src="images/photography.jpg" class="ProductIcon"><br />Photography S$150/hr</a></div>
-                        <div class="flexItem"><a href="#"><img src="images/magic_show.jpg" class="ProductIcon"><br />Magic Show S$200/hr</a></div>
-                    </div>
-             </fieldset>
-        <br />
-        <hr>
-<div>
-    <h1 style="text-align:center">Venue Decoration Packages</h1>
-</div>
+    <h1>Venue Decoration Packages</h1>
         <div id="classic">
             <fieldset>
             <legend><h2>Classic Decoration Package</h2></legend>
@@ -83,7 +55,7 @@
                         <li>50 Air-Filled Balloons</li>
                         <li>Delivery, setup and tear down</li> 
                     </p>
-                    <h3>Price: <span>S$300</span> <i>(Usual: S$400)</i></h3>                   
+                    <h3>Price: <span>S$300</span></h3>                   
                     <p>
                     <button class="yellowbutton"><a href="mailto: jadteamsg@gmail.com">ENQUIRE</a></button>
                     <button class="redbutton">BOOK NOW</button>
@@ -111,7 +83,7 @@
                         <li>30 Helium Balloons OR 2xA3 Laser Cut Outs</li>
                         <li>Delivery, setup and tear down</li> 
                     </p>
-                    <h3>Price: <span>S$500</span> <i>(Usual: S$650)</i></h3>                   
+                    <h3>Price: <span>S$500</span></h3>                   
                     <p>
                     <button class="yellowbutton"><a href="mailto: jadteamsg@gmail.com">ENQUIRE</a></button>
                     <button class="redbutton">BOOK NOW</button>
@@ -139,7 +111,7 @@
                         <li>Cloth Backdrop with Fairy Lights</li>
                         <li>Delivery, setup and tear down</li> 
                     </p>
-                    <h3>Price: <span>S$750</span> <i>(Usual: S$1000)</i></h3>                   
+                    <h3>Price: <span>S$750</span></h3>                   
                     <p>
                     <button class="yellowbutton"><a href="mailto: jadteamsg@gmail.com">ENQUIRE</a></button>
                     <button class="redbutton">BOOK NOW</button>
@@ -153,7 +125,7 @@
                 <legend><h1>Elegance Decoration Package</h1></legend>
                 <table width="100%">
                     <th>
-                        <img src="images/elegance_blue.jpg" /><br />
+                        <img src="images/elegance_blue.jpg"><br />
                         <img src="images/elegance_nature.jpg" width="100px" height="70px">     
                         <img src="images/elegance_pink.jpg" width="100px" height="70px">
                         <img src="images/elegance_blue.jpg" width="100px" height="70px">
@@ -167,7 +139,7 @@
                             <li>3 Elegant Cake Display Tables</li>
                             <li>Delivery, setup and tear down</li> 
                         </p>
-                        <h3>Price: <span>S$1000</span> <i>(Usual: S$1500)</i></h3>                   
+                        <h3>Price: <span>S$1000</span></h3>                   
                         <p>
                         <button class="yellowbutton"><a href="mailto: jadteamsg@gmail.com">ENQUIRE</a></button>
                         <button class="redbutton">BOOK NOW</button>
