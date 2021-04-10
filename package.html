@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE-edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Packages</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="pkgstyles.css">
 
     </head>
     <body>
@@ -19,163 +19,142 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="package.html">Packages</a></li>
-                    <li><a href="#">Login</a></li>
-                    <li><label for="hsearch">Search: </label></li>
-                    <li><input type="search" id="hsearch" name="hsearch"></li>
+                    <li><a href="form.html">Form</a></li>
+                    <li>
+                        <form>
+                            <input type="text" placeholder="Search" id="search_text" name="search_text">
+                            <button type="submit">Search</button>
+                        </form>
+                    </li>
                 </ul>    
             </nav>
         </header>
 
         <section>
             <h1>Our Products and Services</h1>
-            <p>Looking for a fuss-free decoration package for your upcoming special occasion? We got the perfect solution for you! With a customisable range of decoration packages to choose from, you will be sure to find one that is suitable for your needs! Scroll down to find out more!</p>
+            <p>Looking for a fuss-free decoration package for your upcoming special occasion? We got the perfect solution for you!<br /><br /> 
+                With a customisable range of decoration packages to choose from, you will be sure to find one that is suitable for your needs! Scroll down to find out more!</p>
+            <p>All our venue decoration packages are inclusive of delivery, setup and tear down services within the same day.</p>
             <b>To book, call us at <span>+65 63335888 </span>or email us at <span style="color:red">jadteamsg@gmail.com</span> today!</b>
         </section>
 
+        <div>
             <fieldset>
                 <legend><h2>Venue Decoration Packages</h2></legend>
-                    <div class="flexContainer">
-                        <div class="flexItem"><a href="#classic"><img src="images/classic_pirate.jpg" class="ProductIcon"><br />Classic S$300</a></div>
-                        <div class="flexItem"><a href="#deluxe"><img src="images/deluxe_autumn.jpg" class="ProductIcon"><br />Deluxe S$500</a></div>
-                        <div class="flexItem"><a href="#grand"><img src="images/grand_deco.jpg" class="ProductIcon"><br />Grand S$750</a></div>
-                        <div class="flexItem"><a href="#elegance"><img src="images/elegance_blue.jpg" class="ProductIcon"><br />ELegance S$1000</a></div>
+                    <div class="pkgContainer">
+                        <div class="pkgItem"><a href="packagedetail.html#classic"></a><img src="images/classic_pirate.jpg">
+                            <h3>Classic Package</h3>
+                            <ul>
+                                <li>Standard Cloth Backdrop with Stand</li>
+                                <li>Pair of Balloon Columns</li>
+                                <li>50 Air-Filled Balloons</li>
+                            </ul>
+                            <h3>Price: S$300</h3>
+                            </a>
+                        </div>
+                        <div class="pkgItem"><a href="packagedetail.html#deluxe"></a><img src="images/deluxe_autumn.jpg">
+                            <h3>Deluxe Package</h3>
+                            <ul>
+                                <li>Customised Backdrop with stand</li>
+                                <li>Pair of Balloon Bouquet of 15</li>
+                                <li>30 Helium Balloons OR 2xA3 Laser Cut Outs</li>
+                            </ul>
+                        <h3>Price: S$500</h3>              
+                        </a></div>
+                        <div class="pkgItem"><a href="packagedetail.html#grand"></a><img src="images/grand_deco.jpg">
+                            <h3>Grand Package</h3>
+                            <ul>
+                                <li>Artistic Balloon Arch</li>
+                                <li>Customised Name (Up to 1 meter)</li>
+                                <li>Cloth Backdrop with Fairy Lights</li>
+                            </ul>
+                            <h3>Price: S$750</h3>                
+                            </a></div>
+                        <div class="pkgItem"><a href="packagedetail.html#elegance"></a><img src="images/elegance_blue.jpg">
+                            <h3>ELegance Package</h3>
+                            <ul>
+                                <li>Artistic Balloon Arch</li>
+                                <li>Fully Customised Round Backdrop</li>
+                                <li>3 Elegant Cake Display Tables</li>
+                            </ul>
+                            <h3>Price: S$1000</h3>                 
+                            </a></div>
                     </div>
             </fieldset>
 
             <fieldset>
                 <legend><h2>Add-ons</h2></legend>
-                    <div class="flexContainer">
-                        <div class="flexItem"><a href="#"><img src="images/ballpit_slide.jpg" class="ProductIcon"><br />Ball Pit Rental S$50/hr</a></div>
-                        <div class="flexItem"><a href="#"><img src="images/cakes.jpg" class="ProductIcon"><br />Cake for 20pax S$150</a></div>
-                        <div class="flexItem"><a href="#"><img src="images/balloon_sculptures.jpg" class="ProductIcon"><br />Balloon Sculptures S$100</a></div>
-                        <div class="flexItem"><a href="#"><img src="images/acrylic_display.jpg" class="ProductIcon"><br />Acrylic Display S$180</a></div>
+                    <div class="pkgContainer">
+                        <div class="pkgItem"><a href="#"></a><img src="images/ballpit_slide.jpg">
+                            <h3>Ball Pit Rental</h3>
+                            <ul>
+                                <li>L251 x B168 x H36 cm</li>
+                                <li>With mini Slide</li>
+                                <li>Min. 2 hours rental</li>
+                            </ul>
+                            <h3>Price: S$50/hr</h3></a></div>
+                        <div class="pkgItem"><a href="#"><img src="images/balloon_sculptures.jpg">
+                            <h3>Balloon Sculptures</h3>
+                            <ul>
+                                <li>Customised design</li>
+                                <li>2 large centrepieces</li>
+                            </ul>
+                            <h3>Price: S$120</h3>
+                        </a></div>
+                        <div class="pkgItem"><a href="#"><img src="images/cakes.jpg">
+                            <h3>Fondant Cake</h3>
+                            <ul>
+                                <li>20 ~ 25pax S$200</li>
+                                <li>25 ~ 30pax S$300</li>
+                            </ul>
+                            <h3>Price: S$200-S$300</h3></a></div>
+                         <div class="pkgItem"><a href="#"><img src="images/goodie_bag.jpg">
+                            <h3>Goodie Bags</h3>
+                            <ul>
+                                <li>Customised design</li>
+                                <li>20 ~ 30pax: S$20/bag</li>
+                                <li>> 30pax: S$15/bag</li>
+                            </ul>
+                            <h3>Price: Starting from S$400</h3>
+                            </a></div>
                     </div>
-             </fieldset>
+            </fieldset>
+        </div>
 
+        <div>
             <fieldset>
                 <legend><h2>Services</h2></legend>
-                    <div class="flexContainer">
-                        <div class="flexItem"><a href="#"><img src="images/photography.jpg" class="ProductIcon"><br />Photography S$150/hr</a></div>
-                        <div class="flexItem"><a href="#"><img src="images/magic_show.jpg" class="ProductIcon"><br />Magic Show S$200/hr</a></div>
+                    <div class="pkgContainer" style="width:75%">
+                        <div class="pkgItem"><a href="#"><img src="images/photo_svc.jpg">
+                            <h3>Photography Services</h3>
+                            <ul>
+                                <li>80 Polaroid photos</li>
+                                <li>Softcopy photos</li>
+                                <li>Min Duration: 2 hours</li>
+                            </ul>
+                            <h3>Price: S$150/hr</h3>
+                        </a></div>
+                        <div class="pkgItem"><a href="#"><img src="images/magic.jpg">
+                            <h3>Magic Performance</h3>
+                            <ul>
+                                <li>One magician</li>
+                                <li>Living streaming to remote guests</li>
+                                <li>Duration: 0.5 hour</li>
+                            </ul>
+                            <h3>Price: S$250</h3>
+                        </a></div>
+                        <div class="pkgItem"><a href="#"><img src="images/balloon_sculpting.jpg">
+                            <h3>Balloon Scuplting</h3>
+                            <ul>
+                                <li>One balloon sculptor</li>
+                                <li>Min Duration: 1 hour</li>
+                            </ul>
+                            <h3>Price: S$150/hr</h3>
+                        </a></div>
+
                     </div>
              </fieldset>
-        <br />
-        <hr>
-<div>
-    <h1 style="text-align:center">Venue Decoration Packages</h1>
-</div>
-        <div id="classic">
-            <fieldset>
-            <legend><h2>Classic Decoration Package</h2></legend>
-            <table width="100%">
-                <th>
-                    <img src="images/classic_pirate.jpg" /><br /><br />
-                    <img src="images/classic_safari.jpg" width="100px" height="70px">     
-                    <img src="images/classic_city.jpg" width="100px" height="70px">
-                    <img src="images/classic_pirate.jpg" width="100px" height="70px">
-                </th>
-                <th>
-                    <h3>Classic Decoration Package includes:</h3>
-                    <p>
-                    <ol>
-                        <li>Standard Cloth Backdrop with Stand</li>
-                        <li>Pair of Balloon Columns</li>
-                        <li>50 Air-Filled Balloons</li>
-                        <li>Delivery, setup and tear down</li> 
-                    </p>
-                    <h3>Price: <span>S$300</span> <i>(Usual: S$400)</i></h3>                   
-                    <p>
-                    <button class="yellowbutton"><a href="mailto: jadteamsg@gmail.com">ENQUIRE</a></button>
-                    <button class="redbutton">BOOK NOW</button>
-                    </p>
-                </th>
-            </table>
-        </fieldset>
         </div>
-        <div id="deluxe">
-            <fieldset>
-            <legend><h2>Deluxe Decoration Package</h2></legend>
-            <table width="100%">
-                <th>
-                    <img src="images/deluxe_autumn.jpg" /><br />
-                    <img src="images/deluxe_angel.jpg" width="100px" height="70px">     
-                    <img src="images/deluxe_astro.jpg" width="100px" height="70px">     
-                    <img src="images/deluxe_autumn.jpg" width="100px" height="70px"> 
-                </th>
-                <th>
-                    <h3>Deluxe Decoration Package includes:</h3>
-                    <p>
-                    <ol>
-                        <li>Customised Backdrop with stand</li>
-                        <li>Pair of Balloon Bouquet of 15</li>
-                        <li>30 Helium Balloons OR 2xA3 Laser Cut Outs</li>
-                        <li>Delivery, setup and tear down</li> 
-                    </p>
-                    <h3>Price: <span>S$500</span> <i>(Usual: S$650)</i></h3>                   
-                    <p>
-                    <button class="yellowbutton"><a href="mailto: jadteamsg@gmail.com">ENQUIRE</a></button>
-                    <button class="redbutton">BOOK NOW</button>
-                    </p>
-                </th>
-            </table>
-        </fieldset>
-        </div>
-        <div id="grand">
-            <fieldset>
-            <legend><h2>Grand Decoration Package</h2></legend>
-            <table width="100%">
-                <th>
-                    <img src="images/grand_deco.jpg" /><br />
-                    <img src="images/grand_mermaid.jpg" width="100px" height="70px">     
-                    <img src="images/grand_sweet.jpg" width="100px" height="70px">
-                    <img src="images/grand_deco.jpg" width="100px" height="70px">
-                </th>
-                <th>
-                    <h3>Grand Decoration Package includes:</h3>
-                    <p>
-                    <ol>
-                        <li>Artistic Balloon Arch</li>
-                        <li>Customised Name (Up to 1 meter)</li>
-                        <li>Cloth Backdrop with Fairy Lights</li>
-                        <li>Delivery, setup and tear down</li> 
-                    </p>
-                    <h3>Price: <span>S$750</span> <i>(Usual: S$1000)</i></h3>                   
-                    <p>
-                    <button class="yellowbutton"><a href="mailto: jadteamsg@gmail.com">ENQUIRE</a></button>
-                    <button class="redbutton">BOOK NOW</button>
-                    </p>
-                </th>
-            </table>
-        </fieldset>
-        </div>
-        <div id="elegance">
-            <fieldset>
-                <legend><h1>Elegance Decoration Package</h1></legend>
-                <table width="100%">
-                    <th>
-                        <img src="images/elegance_blue.jpg" /><br />
-                        <img src="images/elegance_nature.jpg" width="100px" height="70px">     
-                        <img src="images/elegance_pink.jpg" width="100px" height="70px">
-                        <img src="images/elegance_blue.jpg" width="100px" height="70px">
-                    </th>
-                    <th>
-                        <h3>Elegance Decoration Package includes:</h3>
-                        <p>
-                        <ol>
-                            <li>Artistic Balloon Arch</li>
-                            <li>Fully Customised Round Backdrop</li>
-                            <li>3 Elegant Cake Display Tables</li>
-                            <li>Delivery, setup and tear down</li> 
-                        </p>
-                        <h3>Price: <span>S$1000</span> <i>(Usual: S$1500)</i></h3>                   
-                        <p>
-                        <button class="yellowbutton"><a href="mailto: jadteamsg@gmail.com">ENQUIRE</a></button>
-                        <button class="redbutton">BOOK NOW</button>
-                        </p>
-                    </th>
-                </table>
-            </fieldset>
-
-        </div>
+        
     </body>
 </html>
