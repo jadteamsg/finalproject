@@ -1,0 +1,171 @@
+
+*{
+  font-family: "Open-sans",sans-serif;
+  font: size 20px;
+  color: #011601;
+  box-sizing: border-box;
+  margin: 0;
+}
+/* Set body background image */
+body{
+  background-image:url('images/form-background-design.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  margin: 0;
+  padding: 0px;
+}
+
+/* Styling the Header */
+header{
+  height: 100px;
+  display: flex;
+  background-color:#ffcbba;
+  font-weight: bold;
+  font-size: 18px;
+  align-items: center;
+}
+
+.logo img{
+  width:50%;
+}
+nav{
+  width: 80%;
+  padding: 10px; 
+}
+nav ul{
+  width: 100%;
+  display:flex;
+  justify-content: flex-end;
+  font-size: 16px;
+}
+nav ul li{
+  list-style: none;
+  padding: 10px;
+  align-items: center;
+}
+a{
+  text-decoration: none;
+}
+ nav a:hover{
+  background-color:steelblue;
+}
+nav .textfield input{
+    width: 70%;
+    padding: 3px 10px;
+   /* padding-left: 10px;
+    padding-right: 5px;*/
+    border: 1px solid #ccc;
+    border-radius: 40px;
+
+}
+
+nav .searchbtn{
+    display:inline-block;
+    background-color:darkgrey;
+    color: #060c0e;
+    width: 25%;
+    padding-top: 0 10px;
+    position: relative;
+    border: black;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    text-align:center;
+}
+nav .searchbtn:hover{
+  background-color:steelblue;
+}
+.mobile{
+  display: none;
+}
+/* Set style to the Input Field */
+
+.fieldsection{
+  width: 600px;
+  margin: auto;         
+  background-color:khaki;
+}
+.fieldsection input,label,textarea,select{
+    width: 100%;
+    padding: 5px 10px;
+    margin:  0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    justify-content: center;
+    outline: none;
+  }
+  .fieldsection label{
+    border: none;
+  }
+  .fieldsection textarea{
+    resize: none;
+  }
+  .btnimg{
+    background-color:indianred;
+    padding: 5px; 
+    color: #fff;
+    display: block;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .btnimg:hover{
+    background-color: sienna;
+  }
+  .section2-content{
+    margin: 0px 200px;
+    display: flex;
+    padding: 5px;
+  }
+ .btnadd,.btnview{
+    background-color:indianred;
+    color: #fff;
+    padding: 5px 10px;
+    margin: 8px auto;
+    display: block;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .btnadd:hover,.btnview:hover{
+    background-color:sienna;
+  }
+ /* .btnview{
+    display: none;
+  }*/
+  .footer-content{
+    height: 70px;
+    display: flex;
+    background-color: #ffcbba;
+    width: 100%;
+    justify-content: center;
+  }
+  .footer-content h3{
+    font-size: 14px;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+  }
+  @media screen and (max-width:700px) {
+    .desktop,.logo{
+        display: none;
+    }
+    .mobile{
+      display:flex ;
+      justify-content: space-around;
+      width: 100%;
+  }
+.mobile img{
+      width: auto;
+      height: 90%; 
+    }
+    .fieldsection{
+      flex-direction: column;
+      width: 60%
+    }
+  }
+  
+  
+
+

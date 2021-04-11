@@ -5,8 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Page</title>
+    <link rel="stylesheet" href="formstyles.css">
 </head>
 <body>
-    <H1>Form Page Testing</H1>
+    <header>  
+        <div class="logo">     
+             <img src="images/logo_rainbow_peach.png">
+           <!--<h3 class="titleMenu">Party Packages</h3>-->  
+        </div>
+             <nav class="desktop">
+                 <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="package.html">Packages</a></li>
+                    <li><a href="form.html">Form</a></li> 
+                    <li><div class="textfield"><input type="search" placeholder="Search Here"> <button class="searchbtn">Search</div></li> 
+                 </ul>  
+             </nav>  
+             <nav class="mobile">
+                <a href="#"><img src="images/ic-online.svg"/></a>
+                <a href="#"><img src="images/ic-online.svg"/></a>
+                <a href="#"><img src="images/ic-online.svg"/></a>
+                <a href="#"><img src="images/ic-online.svg"/></a>
+              </nav>
+    </header>
+    <section class="fieldsection">
+        <fieldset>
+            <form>
+                <label for="product_name">Product Name:*</label><br />
+                <input type="text" id="product_name" name="product_name"> <br /><br />
+
+                <label for="product_id">Product ID:*</label><br />
+                <input type="text" id="product_id" name="product_id"><br /><br />
+
+                <label for="product_price">Price:*</label><br />
+                <input type="product_price" id="product_price" name="product_price"><br /><br />
+
+                <label for="product_category">Product Category:*</label><br />
+                <select id="product_category" name="product_category">
+                    <option value="decoration-package">Packages</option>
+                    <option value="add-ons">Add-ons</option>
+                    <option value="services">Services</option>
+                </select><br /><br />
+
+                <label for="product_quantity">Quantity:*</label><br />
+                <input type="number" id="product_quantity" name="product_quantity"  min="0" max="300"><br /><br />
+
+                <label for="product_details">Product Details:*</label><br />
+                <textarea rows="6" cols="60" name="text" placeholder="Description"></textarea><br /><br />
+
+                <label for="product_image">Image:</label><br />
+                <input type="url" id="product_url" name="product_url"> <br/><br/>
+                <button class="btnimg">Upload Image</button> <br /><br />
+                <section class="section2-content">
+                   <button class="btnadd">Add</button>
+                   <button class="btnview">View</button>
+                </section> 
+            </form>
+        </fieldset>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <h3>CompanyName</h3>
+        </div>
+    </footer>
 </body>
 </html>
