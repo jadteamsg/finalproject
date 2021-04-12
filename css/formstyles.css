@@ -11,14 +11,14 @@ body{
   background-image:url('images/form-background-design.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100% 100%;
+  background-size: cover;
   margin: 0;
   padding: 0px;
 }
 
 /* Styling the Header */
 header{
-  height: 100px;
+  height: 70px;
   display: flex;
   background-color:#ffcbba;
   font-weight: bold;
@@ -27,7 +27,7 @@ header{
 }
 
 .logo img{
-  width:50%;
+  width: 30%;
 }
 nav{
   width: 80%;
@@ -54,9 +54,9 @@ nav .textfield input{
     width: 70%;
     padding: 3px 10px;
    /* padding-left: 10px;
-    padding-right: 5px;*/
+    padding-right: 5px;
     border: 1px solid #ccc;
-    border-radius: 40px;
+    border-radius: 40px;*/
 
 }
 
@@ -67,8 +67,8 @@ nav .searchbtn{
     width: 25%;
     padding-top: 0 10px;
     position: relative;
-    border: black;
-    border-radius: 4px;
+    /*border: black;
+    border-radius: 2px;*/
     cursor: pointer;
     font-size: 15px;
     text-align:center;
@@ -85,6 +85,8 @@ nav .searchbtn:hover{
   width: 600px;
   margin: auto;         
   background-color:khaki;
+  border:1px solid black;
+  border-radius: 2px;
 }
 .fieldsection input,label,textarea,select{
     width: 100%;
@@ -140,8 +142,9 @@ nav .searchbtn:hover{
     background-color: #ffcbba;
     width: 100%;
     justify-content: center;
+    align-items: center;
   }
-  .footer-content h3{
+  .footer-content h4{
     font-size: 14px;
     font-weight: bold;
     align-items: center;
@@ -160,9 +163,19 @@ nav .searchbtn:hover{
       width: auto;
       height: 90%; 
     }
-    .fieldsection{
+    .fieldsection,.footer-content{
       flex-direction: column;
-      width: 60%
+      width: auto;
+      padding:10px 10px;
+    }
+    .fieldsection input[type=text],input[type=number],label,select,input[type=url]{
+      width: 100%;
+    }
+  
+    .footer-content{
+      font-size: 4px;
+      padding: 5px 10px;
+      margin: 10px auto;
     }
   }
   

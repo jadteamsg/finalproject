@@ -13,7 +13,7 @@
   }
   /* Styling the Header */
 header{
-    height: 100px;
+    height: 70px;
     display: flex;
     background-color:#ffcbba;
     font-weight: bold;
@@ -22,7 +22,7 @@ header{
   }
   
   .logo img{
-    width:50%;
+    width: 30%;
   }
   nav{
     width: 80%;
@@ -49,9 +49,9 @@ header{
       width: 70%;
       padding: 3px 10px;
      /* padding-left: 10px;
-      padding-right: 5px;*/
+      padding-right: 5px;
       border: 1px solid #ccc;
-      border-radius: 40px;
+      border-radius: 40px;*/
   }
   nav .searchbtn{
       display:inline-block;
@@ -60,8 +60,8 @@ header{
       width: 25%;
       padding-top: 0 10px;
       position: relative;
-      border: black;
-      border-radius: 4px;
+     /* border: black;
+      border-radius: 4px;*/
       cursor: pointer;
       font-size: 15px;
       text-align:center;
@@ -104,6 +104,20 @@ header{
     .form-login .btnlogin:hover{
         background-color: sienna;
       }
+      .footer-content{
+        height: 80px;
+        display: flex;
+        background-color: #ffcbba;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+      }
+      .footer-content h4{
+        font-size: 14px;
+        font-weight: bold;
+        align-items: center;
+        justify-content: center;
+      }
       @media screen and (max-width:700px) {
         .desktop,.logo{
             display: none;
@@ -117,9 +131,22 @@ header{
           width: auto;
           height: 90%; 
         }
-        .main,.form-login{
+        .main,.form-login,.footer-content{
           flex-direction: column;
-          width: 80%
+          width: 100%;
+        }
+        
+        .form-login input[type=text],label,input[type=password]{
+          width: 100%;
+        }
+        .form-login .btnlogin{
+         width: 100%;
+        }
+
+        .footer-content{
+          font-size: 4px;
+          padding: 5px 10px;
+          margin: 10px auto;
         }
       }
 
