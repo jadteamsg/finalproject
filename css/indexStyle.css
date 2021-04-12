@@ -4,19 +4,30 @@ body{
     font-size: 16px;
 }
 
-a:hover {
-    background-color: grey;
-}
-
 hr.solid {
     border-top: 3px solid #bbb;
     width:75%;
+}
+
+.section1 {
+    padding-top: 130px;
+    margin: 0 10%;
+}
+
+.section2 {
+    padding-top: 80px;
+    margin: 0 10%;
 }
 
 .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.section3 {
+    padding-top: 80px;
+   
 }
 
 .flex-container {
@@ -27,12 +38,13 @@ hr.solid {
 }
 
 .flex-item {
-    width: 35%;
+    width: 38%;
     text-align: left;
     background-color: lightgray;
     padding: 20px;
     margin: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
 }
 
 td{
@@ -55,26 +67,23 @@ footer {
     font-size: 12px;
 }
 
-span {
-    color: tomato;
-}
-
-.section3container{
+.section4container{
     display: flex;
     width: 100%;
     flex-wrap: wrap;
     background-color: grey;
     color: white;
     justify-content: center;
+    margin-top: 50px;
 }
 
-.section3item{
+.section4item{
     width:15%;
     padding: 30px 30px;
     font-size: 14px;  
 }
 
-.section3item img {
+.section4item img {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -85,6 +94,8 @@ span {
     align-items: center;
 }
 
-
-
-
+@media screen and (max-width: 800px) {
+    #search, #sitemap{
+        display: none;
+    }
+} /*hide search bar and site map buttons*/

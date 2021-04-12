@@ -4,12 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JAD Events - Your One-Stop Party Planner</title>
+    <title>JADEvents - Your One-Stop Party Planner</title>
     <link rel = "stylesheet" href = "css/indexStyle.css">
+    <!--<link rel="stylesheet" href="css/pkgstyles.css">-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 </head>
 <body>
-    <header>
-        <nav>
+        <!--Navigation Bar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><img src="images/icons8-rainbow-48.png"><b style="color: red;"><i>JADE</i></b>vents</a><!--brand of product-->
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button><!--hamburger-->
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"><b>Home<span class="sr-only">(current)</span></b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="package.html"><b>Products</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html"><b>About</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="form.html"><b>Form</b></a>
+
+              <!--<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>-->
+              <!--aria-disable = for acesssibility-->
+
+            </li>
+          </ul>
+          <form id = "search" class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+    </nav><!--end of nav bar-->
+
+        <!--<nav>
             <table width = "100%">
                 <tr>
                     <th><img src = "images/logo_rainbow.jpg" width="50%" height="50%"></th>
@@ -26,18 +61,45 @@
                     </form>
                 </tr>
             </table>
-        <nav>
-    </header>
-    <section id = "section1">
+        <nav>-->
 
-        <img class="center" src = "images/rental_promo.png" width="80%" height="100%" >
+            <div class="container my-5">
+                
+                <!--<div class = "jumbotron">-->
 
-    </section><br/><br/><br/><br/><br/>
+                    <!--<img src = "images/rental_promo.png" width = "100%" height = "100%">-->
+                  <!--<h1>Welcome to Generation</h1>
+                  <hr class = "my-4">
+                  <p>Preparing, placing and supporting people into life-changing careers.</p>
+                  <a class = "btn btn-primary" href = "#">Find out more</a>-->
+                  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="images/rental_promo.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/hero_banner.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/webbanner-event-rental-a-01.png" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                <!--</div>-->
+            </div>
 
-    <section id = "section2">
-        <h1>WHAT PEOPLE LIKE</h1>
+    <section class = "section2">
+        <h1>FEATURED PRODUCTS</h1>
 
-        <table class = "center" width = "80%">
+        <table class = "center" width = "100%">
             <tr>
                 <td><img class = "images" src = "images/classic_pirate.jpg" width="100%" height="300px"></td>
                 <td><img class = "images" src = "images/deluxe_autumn.jpg" width="100%" height=300px></td>
@@ -50,9 +112,9 @@
             </tr>
            
         </table>
-    </section><br/><br/><br/><br/><br/>
+    </section>
 
-    <section>
+    <section class = "section3">
 
         <h1>WHAT PEOPLE SAY</h1>
 
@@ -78,14 +140,14 @@
             </div>
         </div>
 
-    </section><br/><br/><br/><br/><br/>
+    </section>
     
-    <section class = "section3container">
+    <section class = "section4container">
         <div class = "secPic">
             <img src="images/urban-line-420.png" width=100%>
         </div>
 
-        <div class = "section3item"><img src="images/icons8-shop-64.png"><br/><br/>
+        <div class = "section4item"><img src="images/icons8-shop-64.png"><br/><br/>
             <b>VISIT US</b><br/><br/>
             <b>Retail</b><br/>
             Tampines Mall<br/><br/>
@@ -96,7 +158,7 @@
             Office hours: Mon – Fri, 9am – 6pm</br>
         </div>
 
-        <div class = "section3item"><img src="images/icons8-phone-64.png"><br/><br/>
+        <div class = "section4item"><img src="images/icons8-phone-64.png"><br/><br/>
             <b>CONTACT US</b><br/><br/>
             <b>Office</b></br>
             +65 65692021<br/><br/>
@@ -104,7 +166,7 @@
             <b>Write to us</b><br/><a href="mailto:jadteams@gmail.com">jadteamsg@gmail.com</a>
         </div>
 
-        <div class = "section3item"><img src="images/icons8-envelope-64.png"><br/><br/>
+        <div class = "section4item"><img src="images/icons8-envelope-64.png"><br/><br/>
             <b>FEEDBACK</b><br/><br/>
             Leave us a feedback to tell us if we are doing something well or if there is something we can do better!<br/><br/>
             
@@ -115,8 +177,28 @@
 
     </section>
 
-    <footer>
-        Copyright 2021 JADEvents Pte Ltd | GST/REG: 201532021J | JADEvents™ | All Rights Reserved |
-    </footer>
+    <!--footer section-->
+    <div class = "container-fluid my-5">
+        <div class = "navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom">
+            <div class = "container-fluid">
+                <p class = "navbar-text pull-left">2021 <i>JADE</i>vents™| Terms and Conditions</p>
+                <a href = "#" id = "sitemap" class = "navbar-btn btn-danger btn pull-right">Site Map</a>
+            </div>
+        </div>
+    </div><!--end of footer-->
+
+    <!--JavaScript always at the end-->
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    -->
 </body>
 </html>
