@@ -1,73 +1,109 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Page</title>
-    <link rel="stylesheet" href="css/formstyles.css">
-</head>
-<body>
-    <header>  
-        <div class="logo">     
-             <img src="images/logo_rainbow_peach.png">
-           <!--<h3 class="titleMenu">Party Packages</h3>-->  
-        </div>
-             <nav class="desktop">
-                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="package.html">Packages</a></li>
-                    <li><a href="form.html">Form</a></li> 
-                    <li><div class="textfield"><input type="search" placeholder="Search Here"> <button class="searchbtn">Search</div></li> 
-                 </ul>  
-             </nav>  
-             <nav class="mobile">
-                <a href="#"><img src="images/ic-online.svg"/></a>
-                <a href="#"><img src="images/ic-online.svg"/></a>
-                <a href="#"><img src="images/ic-online.svg"/></a>
-                <a href="#"><img src="images/ic-online.svg"/></a>
-              </nav>
-    </header>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <title>JADEvents Form</title>
+    <link rel="stylesheet" href="css/formStyles.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#"><img src="images/icons8-rainbow-48.png"><b style="color: red;"><i>JADE</i></b>vents</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html"><b>Home </b><span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html"><b>About Us</b></a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="package.html"><b>Items List</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="form.html"><b>Model Form</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="loginpage.html"><b>Login</b></a>
+            </li>
+        </ul>
+        <form id="search" class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
     <section class="fieldsection">
-       <!-- <fieldset></fieldset>-->
-            <form>
-                <label for="product_name">Product Name:*</label><br />
-                <input type="text" id="product_name" name="product_name"> <br /><br />
+      <!-- <fieldset></fieldset>-->
+           <form>
+               <label for="product_name">Product Name:*</label><br />
+               <input type="text" id="product_name" name="product_name"> <br /><br />
 
-                <label for="product_id">Product ID:*</label><br />
-                <input type="text" id="product_id" name="product_id"><br /><br />
+               <label for="product_id">Product ID:*</label><br />
+               <input type="text" id="product_id" name="product_id"><br /><br />
 
-                <label for="product_price">Price:*</label><br />
-                <input type="text" id="product_price" name="product_price"><br /><br />
+               <label for="product_price">Price:*</label><br />
+               <input type="text" id="product_price" name="product_price"><br /><br />
 
-                <label for="product_category">Product Category:*</label><br />
-                <select id="product_category" name="product_category">
-                    <option value="decoration-package">Packages</option>
-                    <option value="add-ons">Add-ons</option>
-                    <option value="services">Services</option>
-                </select><br /><br />
+               <label for="product_category">Product Category:*</label><br />
+               <select id="product_category" name="product_category">
+                   <option value="decoration-package">Packages</option>
+                   <option value="add-ons">Add-ons</option>
+                   <option value="services">Services</option>
+               </select><br /><br />
 
-                <label for="product_quantity">Quantity:*</label><br />
-                <input type="number" id="product_quantity" name="product_quantity"  min="0" max="300"><br /><br />
+               <label for="product_quantity">Quantity:*</label><br />
+               <input type="number" id="product_quantity" name="product_quantity"  min="0" max="300"><br /><br />
 
-                <label for="product_details">Product Details:*</label><br />
-                <textarea rows="6" cols="60" name="text" placeholder="Description"></textarea><br /><br />
+               <label for="product_details">Product Details:*</label><br />
+               <textarea rows="6" cols="60" name="text" placeholder="Description"></textarea><br /><br />
 
-                <label for="product_image">Image:</label><br />
-                <input type="url" id="product_url" name="product_url"> <br/><br/>
-                <button class="btnimg">Upload Image</button> <br /><br />
-                <section class="section2-content">
-                   <button class="btnadd">Add</button>
-                   <button class="btnview">View</button>
-                </section> 
-            </form>
-        
-    </section>
-    <footer>
-        <div class="footer-content">
-            <h4> Copyright 2021 JADEvents Pte Ltd | GST/REG: 201532021J | JADEvents™ | All Rights Reserved |</h4>
-        </div>
-    </footer>
-</body>
+               <label for="product_image">Image:</label><br />
+               <input type="url" id="product_url" name="product_url"> <br/><br/>
+               <button class="btnimg">Upload Image</button> <br /><br />
+               <section class="section2-content">
+                  <button class="btnadd">Add</button>
+                  <button class="btnview">View</button>
+               </section> 
+           </form>
+       
+   </section>
+   <footer>
+    <div class="footer-content">
+        <h4> 2021 <i>JADE</i>vents™| Terms and Conditions</h4>
+    </div>
+</footer>
+    <!--Footer-->
+    <!--<div class="container-fluid my-5">
+      <div class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom">
+          <div class="container-fluid">
+              <p class="navbar-text pull-left">2021 <i>JADE</i>vents™| Terms and Conditions</p>
+              <a href="#" class="navbar-btn btn-danger btn pull-right">Site Map</a>
+             
+          </div>
+      </div>
+    </div>-->
+    
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    -->
+  </body>
 </html>
