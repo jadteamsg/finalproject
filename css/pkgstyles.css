@@ -52,7 +52,8 @@ span {
     width:30%;
     align-items: center;
   }
-  @media screen and (max-width: 800px) {
+
+@media screen and (max-width: 800px) {
     #search, #sitemap{
         display: none;
     }
