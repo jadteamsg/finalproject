@@ -95,7 +95,10 @@ footer {
 }
 
 @media screen and (max-width: 800px) {
-    #search, #sitemap{
+    #search, #sitemap{ /*hide search bar and site map buttons*/
         display: none;
     }
-} /*hide search bar and site map buttons*/
+    .aboustus-banner{
+        display: none;
+    }
+}

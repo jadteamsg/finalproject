@@ -103,6 +103,14 @@ body {
   #search,#sitemap{
     display: none;
   }
+  .aboutus-banner img{
+    width: 280px;
+    height: auto;
+  }
+  .feature-content{
+    justify-content: flex-start;
+  }
+  
 } 
 
 
