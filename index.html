@@ -10,7 +10,7 @@
   </head>
 <body>
         <!--Navigation Bar-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#"><img src="images/icons8-rainbow-48.png"><b style="color: red;"><i>JADE</i></b>vents</a><!--brand of product-->
         
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,7 +26,7 @@
               <a class="nav-link" href="about.html"><b>About Us</b></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="product.html"><b>Product</b></a>
+              <a class="nav-link" href="package.html"><b>Product</b></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="form.html"><b>Form</b></a>
@@ -34,6 +34,9 @@
               <!--<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>-->
               <!--aria-disable = for acesssibility-->
 
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="loginpage.html"><b>Login</b></a>
             </li>
           </ul>
           <form id = "search" class="form-inline">
@@ -64,8 +67,7 @@
 
             <div class="container my-5">
                 
-                <!--<div class = "jumbotron">-->
-
+                <!--<div class = "jumbotron ">-->
                     <!--<img src = "images/rental_promo.png" width = "100%" height = "100%">-->
                   <!--<h1>Welcome to Generation</h1>
                   <hr class = "my-4">
@@ -122,7 +124,7 @@
             <div class="card featured-cards" style="width: 18rem;">
               <img src="images/classic_pirate.jpg" class="card-img-top" alt="Classic Pirate">
               <div class="card-body">
-                <h5 class="card-title">CLASSIC PIRATE</h5>
+                <h5 class="card-title">CLASSIC PACKAGES</h5>
                 <p class="card-text">Standard backdrop with stand and pair of balloon columns</p>
                 <a href="package.html" class="btn btn-primary">Read More</a>
               </div>
@@ -140,7 +142,7 @@
           <div class="card featured-cards" style="width: 18rem;">
             <img src="images/elegance_blue.jpg" class="card-img-top" alt="Blue Elegance">
             <div class="card-body">
-              <h5 class="card-title">BLUE ELEGANCE</h5>
+              <h5 class="card-title">ELEGANCE PACKAGES</h5>
               <p class="card-text">Artistic organic balloon arch with 3 elegant cake display tables</p>
               <a href="package.html" class="btn btn-primary">Read More</a>
             </div>
@@ -255,8 +257,8 @@
     <div class = "container-fluid bg-secondary text-white">
       <div class = "row">
 
-        <div class = "secPic col-lg-6">
-          <img src="images/urban-line-420.png" width="100%">
+        <div class = "secPic col-lg-6 pull-left">
+          <img src="images/urban-line-420.png" width = "100%">
         </div>
         
         <div class = "col-lg-6">
@@ -355,14 +357,13 @@
     </section>-->
 
     <!--footer section-->
-    <div class = "container-fluid my-5">
-        <div class = "navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom">
-            <div class = "container-fluid">
-                <p class = "navbar-text pull-left">2021 <i>JADE</i>vents™| Terms and Conditions</p>
-                <a href = "#" id = "sitemap" class = "navbar-btn btn-danger btn pull-right">Site Map</a>
-            </div>
+    <div class = "navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class = "container-fluid">
+            <p class = "navbar-text pull-left">2021 <i>JADE</i>vents™| Terms and Conditions</p>
+            <a href = "#" id = "sitemap" class = "navbar-btn btn-danger btn pull-right">Site Map</a>
         </div>
-    </div><!--end of footer-->
+    </div>
+    <!--end of footer-->
 
     <!--JavaScript always at the end-->
     <!-- Optional JavaScript; choose one of the two! -->
