@@ -11,7 +11,7 @@ body{
     background-size: cover;
     margin: 0;
     padding: 0px;
-    opacity: 0.8;
+    
   }
  
 input[type=text], select, textarea,input[type=number],input[type=url]{
