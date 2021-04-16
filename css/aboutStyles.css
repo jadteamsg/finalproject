@@ -73,7 +73,23 @@ body {
   margin-right: 70px;
   
 }
-.section3container{
+.section4item{
+  width:15%;
+  padding: 30px 30px;
+  font-size: 14px;  
+}
+
+.section4item img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.secPic{
+  width:30%;
+  align-items: center;
+}
+/*.section3container{
   display: flex;
   width: 100%;
   flex-wrap: wrap;
@@ -97,7 +113,7 @@ body {
 .secPic{
   width:30%;
   align-items: center;
-}
+}*/
 
 @media screen and (max-width: 700px) {
   #search,#sitemap{
