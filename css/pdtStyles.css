@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 0;
+  }
+
+.products {
+    margin: 2% 13%;
+  }
+
+h1, h2, h3, h4, h5 {
+    font-weight:bold;
+}
+
+h1, h2 {
+    color: darkred;
+}
+
+h5 {
+  font-style: italic;
+}
+
+span {
+    color:red;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  text-decoration: none;
+  color: white;
+}
+
+.email {
+  background-color:tomato;
+  font-weight: bold;
+  border: 0;
+  border-radius:5px;
+  box-shadow: 0 0 10px grey;
+}
+
+.email:hover {
+  background-color:crimson;
+  box-shadow: 0 0 10px rgb(65, 64, 64);
+}
+
+.email a:hover {
+  text-decoration: none;
+}
+
+
+.card {
+  box-shadow: 2px 2px 4px #929292;
+}
+
+.buttonalign {
+  display: inline-block;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 10px;
+}
+
+.modalContainer {
+  display: flex;
+  flex-direction: column;
+  }
+
+.modalImage {
+  width: 100%;
+  padding: 10px;
+}
+
+.modalSmImg {
+  width: 15%;
+  margin: 10px;
+}
+
+.enquire a {
+  text-decoration: none;
+  color: white;
+}
+
+
+.section4item{
+  width:15%;
+  padding: 30px 30px;
+  font-size: 14px;  
+}
+
+.section4item img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.secPic{
+  width:30%;
+  align-items: center;
+}
+  
+.secPic{
+    width:30%;
+    align-items: center;
+  }
+
+@media screen and (max-width: 2000px) {
+    #search, #sitemap{
+        display: none;
+    }
+} /*hide search bar and site map buttons*/
+
+
