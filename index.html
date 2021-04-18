@@ -26,7 +26,7 @@
               <a class="nav-link" href="about.html"><b>About Us</b></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="package.html"><b>Product</b></a>
+              <a class="nav-link" href="product.html"><b>Product</b></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="form.html"><b>Form</b></a>
@@ -120,35 +120,162 @@
       <h2><b>WHAT PEOPLE LIKE</b></h2>
 
       <div class = "row card-deck">
-
             <div class="card featured-cards" style="width: 18rem;">
-              <img src="images/classic_pirate.jpg" class="card-img-top" alt="Classic Pirate">
+              <img src="images/classic_pirate.jpg" class="card-img-top" alt="Classic Deco">
               <div class="card-body">
-                <h5 class="card-title">CLASSIC PACKAGES</h5>
+                <h5 class="card-title">CLASSIC DECORATION PACKAGE</h5>
                 <p class="card-text">Standard backdrop with stand and pair of balloon columns</p>
-                <a href="package.html" class="btn btn-primary">Read More</a>
+                <!--<a href="package.html" class="btn btn-primary">Read More</a>-->
+                <button type="button" class="btn btn-primary buttonalign" data-toggle="modal" data-target="#classicModal">Read More</button>
               </div>
             </div>
-        
           <div class="card featured-cards" style="width: 18rem;">
-            <img src="images/balloon_sculpting.jpg" class="card-img-top" alt="Autumn Deluxe">
+            <img src="images/balloon_sculpting.jpg" class="card-img-top" alt="Balloon Sculpting">
             <div class="card-body">
               <h5 class="card-title">VIRTUAL BALLOON SCULPTING</h5>
               <p class="card-text">Balloon sculpting workshop conducted by professional instructor</p>
-              <a href="package.html" class="btn btn-primary">Read More</a>
+              <!--<a href="package.html" class="btn btn-primary">Read More</a>-->
+              <button type="button" class="btn btn-primary buttonalign" data-toggle="modal" data-target="#balloonModal">Read More</button>
             </div>
           </div>
-  
           <div class="card featured-cards" style="width: 18rem;">
-            <img src="images/elegance_blue.jpg" class="card-img-top" alt="Blue Elegance">
+            <img src="images/sleep_over1.jpg" class="card-img-top" alt="Blue Elegance">
             <div class="card-body">
-              <h5 class="card-title">ELEGANCE PACKAGES</h5>
-              <p class="card-text">Artistic organic balloon arch with 3 elegant cake display tables</p>
-              <a href="package.html" class="btn btn-primary">Read More</a>
+              <h5 class="card-title">TWILIGHT BIRTHDAY CAMPCATION PACKAGE</h5>
+              <p class="card-text">Indoor tentage rental with mattress</p>
+              <!--<a href="package.html" class="btn btn-primary">Read More</a>-->
+              <button type="button" class="btn btn-primary buttonalign" data-toggle="modal" data-target="#campcationModal">Read More</button>
             </div>
           </div>
-          
       </div><!--row-->
+
+      <!-- classic modal-->
+      <div class="modal fade" id="classicModal" tabindex="-1" aria-labelledby="classicModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="classicModalLabel">CLASSIC DECORATION PACKAGE</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+
+            <div class="modal-body">
+                <div class="modalContainer">
+                  <div>
+                    <img class="modalImage" src="images/classic_pirate.jpg"><br/>
+                    <img class="modalSmImg" src="images/classic_city.jpg">
+                    <img class="modalSmImg" src="images/classic_pony.jpg">
+                    <img class="modalSmImg" src="images/classic_safari.jpg">
+                  </div>
+
+                  <div>
+                    <p><b><u>Themes Available</u></b></p>
+                    <p>Classic Pirate, Night Action City, Little Pony, Safari Animals</p>
+                    <p><b>Package includes:</b></p>
+                    <ul>
+                      <li>Standard Cloth Backdrop with Stand</li>
+                      <li>Pair of Balloon Columns</li>
+                      <li>50 Air-Filled Balloons</li>
+                      <li>Delivery, Setup and Tear Down</li>
+                    </ul>
+                    <h5><i>Price: S$300</i></h5>
+                  </div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Book Now</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+
+          </div>
+        </div>
+      </div><!--end of modal-->
+
+      <!-- balloon modal-->
+      <div class="modal fade" id="balloonModal" tabindex="-1" aria-labelledby="balloonModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="balloonModalLabel">VIRTUAL BALLOON SCULPTING WORKSHOP</h5>
+
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+
+            <div class="modal-body">
+                <div class="modalContainer">
+
+                  <div>
+                    <img class="modalImage" src="images/balloon_sculptures.jpg"><br/>
+                  </div>
+
+                  <div id = "balloon-text">
+                    <p>Learn to twist and form the balloon into a specific design in the comfort of your own home!</p>
+                    <ul>
+                      <li>Workshop duration - 60 mins</li>
+                      <li>Suitable for both adults and children</li>
+                      <li>Perfect for team bonding, birthday parties, coporate and CC/RC events</li>  
+                    </ul>
+                    <p><b>*Free delivery of materials to each of the particpant's home*</b></p>
+                    <h5><i>For 10 pax - S$20/pax</i></h5>
+                    <h5><i>For 20 pax - S$18/pax</i></h5>
+                  </div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Book Now</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+
+          </div>
+        </div>
+      </div><!--end of modal-->
+
+      <!-- campcation modal-->
+      <div class="modal fade" id="campcationModal" tabindex="-1" aria-labelledby="campcationModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="campcationModalLabel">TWILIGHT BIRTHDAY CAMPCATION PACKAGE</h5>
+
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+
+            <div class="modal-body">
+                <div class="modalContainer">
+                  <div>
+                    <img class="modalImage" src="images/sleep_over1.jpg"><br/>
+                  </div>
+                  
+                  <div id = "campcation-text">
+                    <p>Have an unforgettable birthday campcation experience with your best pals with our Twilight Package!</p>
+                    <p><b>Package includes:</b></p>
+                    <ul>
+                      <li>Indoor Tentage with Single Size Bed</li> 
+                      <li>Happy Birthday Decorative Lights</li>
+                      <li>Warm Light Lamps</li>
+                      <li>Delivery, Setup and Tear Down</li>    
+                    </ul>
+                    <p><b>*Free 1x huggable Sheepy Plushy with every set booked*</b></p>
+                    <h5><i>Price: S$120/set/night</i></h5>
+                  </div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Book Now</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+
+          </div>
+        </div>
+      </div><!--end of modal-->
 
     </div><!--for container-->
 
