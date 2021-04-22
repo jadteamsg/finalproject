@@ -21,6 +21,16 @@ body {
   color: #000;
 }
 
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  text-align: center;
+}
+.card p{
+  margin: 2px 1px;
+}
+
+
 /*.aboutus-text {
   color: #606060;
   font-size: 13px;
@@ -60,6 +70,7 @@ body {
   line-height: 20px;
 }
 
+
 .fakeimg{
   background-color: #aaa;
   width: 80%;
@@ -73,22 +84,13 @@ body {
   margin-right: 70px;
   
 }
-.section3container{
-  display: flex;
-  width: 100%;
-  flex-wrap: wrap;
-  background-color: grey;
-  color: white;
-  justify-content: center;
-}
-
-.section3item{
+.section4item{
   width:15%;
   padding: 30px 30px;
   font-size: 14px;  
 }
 
-.section3item img {
+.section4item img {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -103,6 +105,17 @@ body {
   #search,#sitemap{
     display: none;
   }
+  .aboutus-banner img{
+    width: 280px;
+    height: auto;
+  }
+  #bannerimg-aboutus{
+    width: 300px;
+  }
+  .feature-content{
+    justify-content: flex-start;
+  }
+  
 } 
 
 

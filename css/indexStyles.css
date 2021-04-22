@@ -3,40 +3,40 @@ body{
     margin:0; /*remove white spaces around browser*/
     font-size: 16px;
 }
-
+​
 hr.solid {
     border-top: 3px solid #bbb;
     width:75%;
 }
-
+​
 .section1 {
     padding-top: 130px;
     margin: 0 10%;
 }
-
+​
 .section2 {
     padding-top: 80px;
     margin: 0 10%;
 }
-
+​
 .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-
+​
 .section3 {
     padding-top: 80px;
    
 }
-
+​
 .flex-container {
     display: flex;
     width: 100%;
     justify-content: center;
     flex-wrap: wrap;
 }
-
+​
 .flex-item {
     width: 38%;
     text-align: left;
@@ -46,23 +46,23 @@ hr.solid {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 10px;
 }
-
+​
 td{
     padding:10px;
 }
-
+​
 .images {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-align: center;
 }
-
+​
 /*footer {
     background-color: black;
     color: white;
     padding: 10px;
     font-size: 12px;
 }*/
-
+​
 /*.section4container{
     display: flex;
     width: 100%;
@@ -71,34 +71,30 @@ td{
     color: white;
     justify-content: center;
 }*/
-
+​
 .section4item{
     width:15%;
     padding: 30px 30px;
     font-size: 14px;  
 }
-
+​
 .section4item img {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-
+​
 .secPic{
     width:30%;
     align-items: center;
 }
+​
 
-@media screen and (max-width: 800px) {
-    #search, #sitemap{
-        display: none;
-    }
-} /*hide search bar and site map buttons*/
-
+​
 .featured-cards {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
+​
 a {
     color: white;
 }
@@ -136,4 +132,10 @@ a:active {
 
 #balloon-text, #campcation-text{
     padding-top: 10px;
+}
+
+@media screen and (max-width: 800px) {
+    #search,#sitemap{
+      display: none;
+    }
 }
