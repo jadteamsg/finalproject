@@ -1,89 +1,102 @@
 
-.fieldsection{
-    width: 600px;
-    margin: 5px auto;         
-    background-color:rgb(214, 207, 206);
-    border:1px solid black;
-    border-radius: 2px;
+/* Set body background image */
+* {
+    box-sizing: border-box;
   }
-  .fieldsection input,label,textarea,select{
-      width: 100%;
-      padding: 0 10px;
-      margin:  0;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      justify-content: center;
-      outline: none;
-    }
-    .fieldsection label{
-      border: none;
-    }
-    .fieldsection textarea{
-      resize: none;
-    }
-    .btnimg{
-      background-color:indianred;
-      padding: 5px; 
-      color: #fff;
-      display: block;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-    .btnimg:hover{
-      background-color: sienna;
-    }
-    .section2-content{
-      margin: 0px 150px;
-      display: flex;
-      padding: 5px;
-    }
-   .btnadd,.btnview{
-      background-color:indianred;
-      color: #fff;
-      padding: 5px 10px;
-      margin: 5px auto;
-      display: block;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-    .btnadd:hover,.btnview:hover{
-      background-color:sienna;
-    }
-    .btnview{
-        display: none;
-    }
-    .footer-content{
-      height: 70px;
-      display: flex;
-      background-color: black;
-      width: 100%;
-      justify-content: flex-start;
-      align-items: center;
-      color: white;
-    }
-    .footer-content h4{
-      font-size: 14px;
-      font-weight: bold;
-      align-items: center;
-      justify-content: center;
-    }
-    @media screen and (max-width:700px) {
-        
-        .fieldsection,.footer-content{
-          flex-direction: column;
-          width: 100%;
-          padding:10px;
-        }
-        .fieldsection input[type=text],input[type=number],label,select,input[type=url]{
-          width: 100%;
-        }
-        .footer-content{
-          font-size: 4px;
-          padding: 5px 10px;
-          margin: 10px auto;
-        }
-    }
-   
+  /* Set body background image */
+body{
+    background-image:url('../images/colorful-party-img.webp');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0px;
     
+  }
+ 
+input[type=text], select, textarea,input[type=number],input[type=url]{
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  
+  /* Style the label to display next to the inputs */
+  label {
+    padding: 5px 5px 5px 0;
+    display: inline-block;
+    font-weight: bold;
+  }
+  
+  /* Style the submit button */
+  input[type=submit] {
+    background-color:darkred;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float:right;
+    margin: 5px;
+  }
+
+   #submitview{
+    display:none;
+  }
+
+  .btnimg{
+    background-color:darkred;
+    padding: 5px; 
+    color: #fff;
+    display: block;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 3px;
+  }
+  .btnimg:hover{
+    background-color: sienna;
+  }
+  
+  /* Style the container */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  /* Floating column for labels: 25% width */
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  /* Floating column for inputs: 75% width */
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+    #search,#sitemap{
+      display: none;
+    }
+  }
