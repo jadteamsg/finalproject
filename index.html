@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JADEvents - Your One-Stop Party Planner</title>
-    <link rel = "stylesheet" href = "css/indexStyle.css">
+    <link rel = "stylesheet" href = "css/indexStyles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
   </head>
 <body>
@@ -117,40 +117,42 @@
 
     <div class = "container my-5">
 
-      <h2><b>WHAT PEOPLE LIKE</b></h2>
+      <h2><b>OUR PROPULAR PRODUCTS</b></h2>
 
-      <div class = "row card-deck">
-            <div class="card featured-cards" style="width: 18rem;">
+      <div id = 'featuredRow' class = "row card-deck">
+            <!--<div class="card featured-cards" style="width: 18rem;">
               <img src="images/classic_pirate.jpg" class="card-img-top" alt="Classic Deco">
               <div class="card-body">
                 <h5 class="card-title">CLASSIC DECORATION PACKAGE</h5>
                 <p class="card-text">Standard backdrop with stand and pair of balloon columns</p>
-                <!--<a href="package.html" class="btn btn-primary">Read More</a>-->
+                
                 <button type="button" class="btn btn-primary buttonalign" data-toggle="modal" data-target="#classicModal">Read More</button>
               </div>
             </div>
+
           <div class="card featured-cards" style="width: 18rem;">
             <img src="images/balloon_sculpting.jpg" class="card-img-top" alt="Balloon Sculpting">
             <div class="card-body">
               <h5 class="card-title">VIRTUAL BALLOON SCULPTING</h5>
               <p class="card-text">Balloon sculpting workshop conducted by professional instructor</p>
-              <!--<a href="package.html" class="btn btn-primary">Read More</a>-->
+              
               <button type="button" class="btn btn-primary buttonalign" data-toggle="modal" data-target="#balloonModal">Read More</button>
             </div>
           </div>
+
           <div class="card featured-cards" style="width: 18rem;">
             <img src="images/sleep_over1.jpg" class="card-img-top" alt="Blue Elegance">
             <div class="card-body">
               <h5 class="card-title">TWILIGHT BIRTHDAY CAMPCATION PACKAGE</h5>
               <p class="card-text">Indoor tentage rental with mattress</p>
-              <!--<a href="package.html" class="btn btn-primary">Read More</a>-->
               <button type="button" class="btn btn-primary buttonalign" data-toggle="modal" data-target="#campcationModal">Read More</button>
             </div>
-          </div>
+          </div>-->
+
       </div><!--row-->
 
       <!-- classic modal-->
-      <div class="modal fade" id="classicModal" tabindex="-1" aria-labelledby="classicModalLabel" aria-hidden="true">
+      <!--<div class="modal fade" id="classicModal" tabindex="-1" aria-labelledby="classicModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
@@ -185,13 +187,13 @@
             </div>
 
             <div class="modal-footer">
-              <button type="button" class="btn btn-primary">Book Now</button>
+              <button type="button" class="btn btn-primary" href="mailto: jadteamsg@gmail.com">Enquire</button>
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             </div>
 
           </div>
         </div>
-      </div><!--end of modal-->
+      </div>--><!--end of modal-->
 
       <!-- balloon modal-->
       <div class="modal fade" id="balloonModal" tabindex="-1" aria-labelledby="balloonModalLabel" aria-hidden="true">
@@ -227,7 +229,7 @@
             </div>
 
             <div class="modal-footer">
-              <button type="button" class="btn btn-primary">Book Now</button>
+              <button type="button" class="btn btn-primary" href="mailto: jadteamsg@gmail.com">Enquire</button>
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             </div>
 
@@ -269,7 +271,7 @@
             </div>
 
             <div class="modal-footer">
-              <button type="button" class="btn btn-primary">Book Now</button>
+              <button type="button" class="btn btn-primary" href="mailto: jadteamsg@gmail.com">Enquire</button>
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             </div>
 
@@ -287,14 +289,16 @@
 
         <div class="card text-white bg-secondary mb-3 p-3">
           <div class="card-body">
-            <h5 class="card-title"><i>"...EVERYONE LOVED THE CRISPY ON THE OUTSIDE & FLUFFY ON THE INSIDE WAFFLES..."</i></h5>
+            <h5 class="card-title"><i>"AWESOME!"</i></h5>
             <blockquote class="blockquote mb-0 my-5">
-              <p><i>"Tableau would like to thank Party Mojo for the super yummy freshly made waffles!</p>
-              <p>Many asked who you guys were and told me to get you guys to return for another event. Thanks!"</i></p>
-              <footer class="blockquote-footer text-white">	Caprina, Tableau</footer>
+              <p><i>"Alysson had a really awesome birthday celebration where all the guests, adults and children alike, thoroughly enjoyed themselves with the balloon sculpting and magic show.</p>
+              <p>Thanks to <b>JADEvents</b>  team, Alysson had a birthday celebration to remember."</i></p>
+              <footer class="blockquote-footer text-white">Joe</footer>
             </blockquote>
           </div>
         </div>
+
+         
 
         <div class="card border-light mb-3 p-3">
           <div class="card-body">
@@ -389,15 +393,14 @@
         </div>
         
         <div class = "col-lg-6">
-          <div class = "row">
+          <div class = "row my-5 mx-5">
             
             <div class = "section4item col-lg-4">
               <h5>VISIT US</h5>
               <h6>Retail</h6>
               <p>Tampines Mall</p>
               <h6>Office</h6>
-              <p>IMM Shopping Mall<br/>
-              2 Jurong East Street 21 #04-33V<br/>
+              <p>IMM Shopping Mall<br/>2 Jurong East Street 21 #04-33V
               Singapore 609601<br/>
               Office hours: Mon – Fri, 9am – 6pm</p> 
             </div>
@@ -431,7 +434,7 @@
             </div>
           </div>
 
-          <div class = "row">
+          <div class = "row mx-5">
             <div class = "section4item col-lg-4">
               <img src="images/icons8-shop-64.png">
             </div>
@@ -498,7 +501,8 @@
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-
+    <script src = 'js/featuredProductsController.js'></script>
+    <script src = 'js/featuredProductListing.js'></script>
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
