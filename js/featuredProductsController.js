@@ -1,48 +1,26 @@
 var productNum;
 
-const createHTMLList = (name, description, details, price, imageURL) =>
+const createHTMLList = (index, name, description, details, price, imageURL) =>
 `
-<div class="card featured-cards" style="width: 18rem;">
-    <img src= ${imageURL} class="card-img-top" alt=${name}>
-    <div class="card-body">
-    <h5 class="card-title">${name}</h5>
-    <p class="card-text">${description}</p>
-    <button type="button" class="btn btn-primary buttonalign" data-toggle="modal" data-target="#modal${productNum}">Read More</button>
-    </div>
-</div>
-
-<div class="modal fade" id="modal${productNum}" tabindex="-1" aria-labelledby="label${productNum}" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-
-            <div class="modal-header">
-                <h5 class="modal-title" id="label${productNum}">${name}</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-
-            <div class="modal-body">
-                <div class="modalContainer">
-                    <div>
-                    <img class="modalImage" src= ${imageURL}>
-                    </div>
-
-                    <div class = 'modalText'>
-                    <p>${details}</p>
-                    <h5><i>Price: ${price}</i></h5>
-                    </div>
-                </div>
-            </div>
-
-            <div class="modal-footer">
-                <button type="button" class="btn btn-primary" href="mailto: jadteamsg@gmail.com">Enquire Now</button>
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            </div>
+<div class="col-lg-4 col-md-6 col-sm-1">
+    <div class="card featured-cards">
+        <img src= ${imageURL} class="card-img-top" alt=${name}>
+        <div class="card-body">
+        <h5 class="card-title">${name}</h5>
+        <p class="card-text">${description}</p>
+        <a id = '${index}' href="#" class="btn btn-primary" data-toggle = 'modal' data-target = '#productModal'>Read More</a>
         </div>
     </div>
 </div>
 `;
+
+function displayProductDetails(item) {
+
+    document.querySelector('#modalName').innerText = item.iName;
+    document.querySelector('#modalImage').src = item.iURL;
+    document.querySelector('#modalDetails').innerText = item.iDetails;
+    document.querySelector('#modalPrice').innerText = item.iPrice;
+}
 
 class featuredProductsController {
     constructor() {
@@ -71,15 +49,28 @@ class featuredProductsController {
 
             const item = this._productList[productNum];    //assign the individual item to the variable
 
-            if(item.iFeature) {
+            if(item.iFeature && productHTMLList.length<3) {
 
-                featureList.push(item.iName);
-                
-                const productHTML = createHTMLList(item.iName, item.iDescription, item.iDetails, item.iPrice, item.iURL);
+                featureList.push(item);
 
-                if(productHTMLList.length<3) {
+                const productHTML = createHTMLList(productNum, item.iName, item.iDescription, item.iDetails, item.iPrice, item.iURL);
 
-                    productHTMLList.push(productHTML);
+                productHTMLList.push(productHTML);
+
+                //console.log(productHTMLList);
+
+            } else if(item.iFeature) {
+
+                featureList.shift();
+                productHTMLList.shift();
+                const productHTML = createHTMLList(productNum, item.iName, item.iDescription, item.iDetails, item.iPrice, item.iURL);
+                productHTMLList.push(productHTML);
+                console.log(productHTMLList);
+            }
+
+                /*if(featureList.length<3) {
+
+                   
 
                 } else {
                     
@@ -96,18 +87,21 @@ class featuredProductsController {
                         if (item.iName == productName) {
             
                             item.iFeature = false;
-            
-                            console.log(item);
+        
                         }
                     }
-                }
-            }
+                }*/
         }  
         //Join all the elements/items in my productHTMLList into 1 string and separate by a break
         const pHTML = productHTMLList.join('\n'); //<br/>??
 
         document.querySelector('#featuredRow').innerHTML = pHTML;
 
-    }    //end of displayProducts
+        for(var i = 0; i<featureList.length; i++) {
+            
+            const item = featureList[i];
 
+            document.getElementById(i).addEventListener('click', function() {displayProductDetails(item);});
+        }
+    }    //end of displayProducts
 }   //end of ProductsController class
