@@ -5,7 +5,10 @@ body {
   }
 
 .products {
-    margin: 2% 13%;
+    margin: 100px 15% 0px 15%;
+    font-size:large;
+    font-weight: bold;
+    text-align: center;
   }
 
 h1, h2, h3, h4, h5 {
@@ -16,16 +19,9 @@ h1, h2 {
     color: darkred;
 }
 
-h5 {
-  font-style: italic;
-}
-
-span {
-    color:red;
-}
-
 a {
   text-decoration: none;
+  color:white;
 }
 
 a:link {
@@ -44,6 +40,7 @@ a:link {
 .email:hover {
   background-color:crimson;
   box-shadow: 0 0 10px rgb(65, 64, 64);
+  transform: scale(1.1);
 }
 
 .email a:hover {
@@ -52,29 +49,39 @@ a:link {
 
 
 .card {
-  box-shadow: 2px 2px 4px #929292;
+  transition: transform 0.2s ease;
+  box-shadow: 0 4px 6px 0 #929292;
+  border-radius: 0;
+  border: 0;
+  margin-bottom: 1.5em;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
 }
 
 .buttonalign {
   display: inline-block;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 50%;
+  margin-right: 10%;
   margin-bottom: 10px;
 }
 
-.modalContainer {
-  display: flex;
-  flex-direction: column;
-  }
-
-.modalImage {
-  width: 100%;
-  padding: 10px;
+#modalName{
+  font-size: x-large;
+  font-weight: bold;
+  font-style: italic;
 }
 
-.modalSmImg {
-  width: 15%;
-  margin: 10px;
+#modalPrice{
+  font-weight: bold;
+  font-style: italic;
+}
+
+.price{
+  font-weight: bold;
+  font-style: italic;
 }
 
 .enquire a {
@@ -82,9 +89,12 @@ a:link {
   color: white;
 }
 
+hr{
+  border-radius: 10px;
+  border-width: 5px;
+}
 
 .section4item{
-  width:15%;
   padding: 30px 30px;
   font-size: 14px;  
 }
@@ -105,10 +115,34 @@ a:link {
     align-items: center;
   }
 
-@media screen and (max-width: 2000px) {
-    #search, #sitemap{
+.footerIcon {
+    height: 30px;
+}
+
+#mobileContact{
+  display:none;
+  padding: 5%;
+  font-size: 14px;
+  padding: 10px 20px 60px 20px;
+}
+
+@media screen and (max-width: 1000px) {
+    #hide, #search, #sitemap{
         display: none;
     }
+
+    #mobileContact{
+      display:flex;
+    }
+
+    .hide {
+      display: none;
+  }
+
+    #hide1, #hide2, #hide3, #hide4 {
+
+      display: none;
+
+  }
+
 } /*hide search bar and site map buttons*/
-
-
