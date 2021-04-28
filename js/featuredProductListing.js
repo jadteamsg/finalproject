@@ -23,7 +23,7 @@ function loadData()
 loadData();
 
 //Example to push information into localStorage
-var myName = 'Jean', myAge = 18;
+/*var myName = 'Jean', myAge = 18;
 
 window.localStorage.setItem('name', myName);
 window.localStorage.setItem('age', myAge);
@@ -35,5 +35,5 @@ var myOccupation = 'Junior Full Stack Developer';
 
 sessionStorage.setItem('occupation', myOccupation);
 
-alert(`Session Storage: My occupation is ${sessionStorage.getItem('occupation')}`);
+alert(`Session Storage: My occupation is ${sessionStorage.getItem('occupation')}`);*/
 
