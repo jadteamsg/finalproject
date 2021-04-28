@@ -11,9 +11,9 @@ body {
   font-weight: bold;
 }
 .aboutus-title {
-  font-size: 25px;
+  font-size: 22px;
   letter-spacing: 0;
-  line-height: 30px;
+  line-height: 10px;
   margin: 0 0 25px;
   padding: 0 0 10px;
   position: relative;
@@ -29,7 +29,6 @@ body {
 .card p{
   margin: 2px 1px;
 }
-
 
 /*.aboutus-text {
   color: #606060;
@@ -62,20 +61,24 @@ body {
  .feature-content {
   /*float: left;*/
   padding-left: 28px;
-  width: 78%;
+  width: 90%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
 }
  .feature-content p {
   color: #606060;
   font-size: 14px;
   line-height: 20px;
 }
+#bannerimg{
+  padding: 35px;
+}
 
-
-.fakeimg{
+/*.fakeimg{
   background-color: #aaa;
   width: 80%;
   padding:20px;
-}
+}*/
 .aboutus-content{
   color: #606060;
   font-size: 15px;
@@ -106,7 +109,7 @@ body {
     display: none;
   }
   .aboutus-banner img{
-    width: 280px;
+    width: 300px;
     height: auto;
   }
   #bannerimg-aboutus{
@@ -115,6 +118,20 @@ body {
   .feature-content{
     justify-content: flex-start;
   }
+
+  #hide {
+    display: none;
+}
+#contactUs{
+  width: 100%;
+  padding: 10px;
+}
+#contactUs h6{
+  font-weight: bold;
+}
+#footerSection {
+  display: none;
+}
   
 } 
 

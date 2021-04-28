@@ -19,21 +19,21 @@
         </button>
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
+          <ul class="navbar-nav ml-auto mr-5">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+            </li>
             <li class="nav-item active">
-              <a class="nav-link" href="index.html"><b>Home </b><span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="about.html">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html"><b>About Us</b></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="product.html"><b>Product</b></a>
+                <a class="nav-link" href="product.html">Product</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="form.html"><b>Form</b></a>
+                <a class="nav-link" href="form.html">Form</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="login.html"><b>Login</b></a>
+                <a class="nav-link" href="login.html">Login</a>
               </li>
           </ul>
           <form id="search" class="form-inline my-2 my-lg-0">
@@ -42,6 +42,7 @@
           </form>
         </div>
       </nav>
+
       <div class="aboutus-section">
         <div class="container">
             <div class="row">
@@ -61,17 +62,17 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-1 col-sm-4">
-                    <div class="feature">
+                    <div class="feature"><br/><br/>
                         <div class="feature-content">
                            <h4>Work with heart</h4>
                            <p>“The secret of joy in work is contained in one word – excellence. To know how to do something well is to enjoy it.”</p>
                         </div>
                           <div class="feature-content">
                              <h4>Our Beliefs</h4>
-                             <p>-Teamwork (Learning together and helping one another)<br>
-                                -Growth Mindset(Continuously learning and improving ourselves.)<br>
-                                -Trust(We believe in one another and know that we will try our best in whatever we do).<br>
-                                -Personal Responsibility(Increase our value and the value we can bring to any team/project). <br>
+                             <p><b>Teamwork</b>(Learning together and helping one another)<br>
+                                <b>Growth Mindset</b>(Continuously learning and improving ourselves.)<br>
+                                <b>Trust</b>(We believe in one another and know that we will try our best in whatever we do).<br>
+                                <b>Personal Responsibility</b>(Increase our value and the value we can bring to any team/project). <br>
                               </p>
                           </div>
                      </div>
@@ -86,7 +87,7 @@
           </div>
         </div>
       </div> 
-      <img id="bannerimg-aboutus" src="images/backgroundimg-aboutus.jpg" class="rounded mx-auto d-block" alt="..."><br>
+      <img id="bannerimg-aboutus" src="images/backgroundimg-aboutus.jpg" class="rounded mx-auto d-block" alt="..."><br/>
       <h2 style="text-align:center"><b>Our Team</b></h2>
       <div class="container">
         <div class="row">
@@ -127,72 +128,71 @@
         </div>
       </div>
       
-    <div class = "container-fluid bg-secondary text-white">
-      <div class = "row">
-
-        <div class = "secPic col-lg-6">
-          <img src="images/urban-line-420.png" width="100%">
-        </div>
-        
-        <div class = "col-lg-6">
-          <div class = "row">
-            
-            <div class = "section4item col-lg-4">
-              <h5>VISIT US</h5>
-              <h6>Retail</h6>
-              <p>Tampines Mall</p>
-              <h6>Office</h6>
-              <p>IMM Shopping Mall<br/>
-              2 Jurong East Street 21 #04-33V<br/>
-              Singapore 609601<br/>
-              Office hours: Mon – Fri, 9am – 6pm</p> 
-            </div>
-
-            <div class = "section4item col-lg-4">
-              <h5>CONTACT US</h5>
-    
-              <h6>Office</h6>
-    
-              <p>+65 65692021</p>
-    
-              <h6>Mobile</h6>
-              
-              <p>+65 81602021<br/>+65 90022021 (After Office Hrs)</p>
-
-              <h6>Write to us</h6>
-              <p><a href="mailto:jadteams@gmail.com">jadteamsg@gmail.com</a></p>
-              
-            </div>
-
-            <div class = "section4item col-lg-4">
-              <h5>FEEDBACK</h5>
-    
-              <p>Leave us a feedback to tell us if we are doing something well or if there is something we can do better!</p>
-              
-              <h6>SUBSCRIBE</h6>
-              <p>Join our mailing list to get monthly updates on the latest promotions and happenings!
-              </p>
-              <p><a href>Subscribe Now</a></p>
-              
-            </div>
+      <div class = "container-fluid bg-secondary text-white">
+        <div class = "row">
+  
+          <div id = 'hide' class = "secPic col-lg-6 pull-left">
+            <img src="images/urban-line-420.png" width = "100%">
           </div>
-
-          <div class = "row">
-            <div class = "section4item col-lg-4">
-              <img src="images/icons8-shop-64.png">
+          
+          <div class = "col-lg-6">
+            <div class = "row my-4 mx-4">
+              
+              <div id = 'hide' class = "section4item col-lg-4">
+                <h5>VISIT US</h5>
+                <h6>Retail</h6>
+                <p>Tampines Mall</p>
+                <h6>Office</h6>
+                <p>IMM Shopping Mall<br/>2 Jurong East Street 21 #04-33V
+                Singapore 609601<br/>
+                Office hours: Mon – Fri, 9am – 6pm</p> 
+              </div>
+  
+              <div id = 'contactUs' class = "section4item col-lg-3 col-md-1 col-sm-4">
+                <h5>CONTACT US</h5>
+      
+                <h6>Office</h6>
+      
+                <p>+65 65692021</p>
+      
+                <h6>Mobile</h6>
+                
+                <p>+65 81602021<br/>+65 90022021 (After Office Hrs)</p>
+  
+                <h6>Write to us</h6>
+                <p><a href="mailto:jadteams@gmail.com">jadteamsg@gmail.com</a></p>
+                
+              </div>
+  
+              <div id = 'hide' class = "section4item col-lg-4">
+                <h5>FEEDBACK</h5>
+      
+                <p>Leave us a feedback to tell us if we are doing something well or if there is something we can do better!</p>
+                
+                <h6>SUBSCRIBE</h6>
+                <p>Join our mailing list to get monthly updates on the latest promotions and happenings!
+                </p>
+                <p><a href>Subscribe Now</a></p>
+                
+              </div>
             </div>
-
-            <div class = "section4item col-lg-4">
-              <img src="images/icons8-phone-64.png">
-            </div>
-            
-            <div class = "section4item col-lg-4">
-              <img src="images/icons8-envelope-64.png">
+  
+            <div id = 'hide' class = "row mx-5">
+              <div class = "section4item col-lg-4">
+                <img src="images/icons8-shop-64.png">
+              </div>
+  
+              <div class = "section4item col-lg-4">
+                <img src="images/icons8-phone-64.png">
+              </div>
+              
+              <div class = "section4item col-lg-4">
+                <img src="images/icons8-envelope-64.png">
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
     
 
       <!--Footer-->
