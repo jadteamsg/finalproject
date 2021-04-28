@@ -4,15 +4,16 @@ const createHTMLList = (index, name, description, details, price, imageURL) =>
 `
 <div class="col-lg-4 col-md-6 col-sm-1">
     <div class="card featured-cards">
-        <img src= ${imageURL} class="card-img-top" alt=${name}>
+        <img id = '${index}' src= ${imageURL} class="card-img-top" alt=${name} data-toggle = 'modal' data-target = '#productModal'>
         <div class="card-body">
         <h5 class="card-title">${name}</h5>
         <p class="card-text">${description}</p>
-        <a id = '${index}' href="#" class="btn btn-primary" data-toggle = 'modal' data-target = '#productModal'>Read More</a>
         </div>
     </div>
 </div>
 `;
+
+//<a id = '${index}' href="#" class="btn btn-primary" data-toggle = 'modal' data-target = '#productModal'>Read More</a>
 
 function displayProductDetails(item) {
 
