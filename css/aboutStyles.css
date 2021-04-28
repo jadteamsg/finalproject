@@ -104,6 +104,10 @@ body {
   align-items: center;
 }
 
+.footerIcon {
+  height: 30px;
+}
+
 @media screen and (max-width: 700px) {
   #search,#sitemap{
     display: none;
@@ -119,16 +123,10 @@ body {
     justify-content: flex-start;
   }
 
-  #hide {
+  .hide {
     display: none;
 }
-#contactUs{
-  width: 100%;
-  padding: 10px;
-}
-#contactUs h6{
-  font-weight: bold;
-}
+
 #footerSection {
   display: none;
 }
