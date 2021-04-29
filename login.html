@@ -19,21 +19,21 @@
         </button>
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="index.html"><b>Home </b><span class="sr-only">(current)</span></a>
+          <ul class="navbar-nav ml-auto mr-5">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html"><b>About Us</b></a>
+                <a class="nav-link" href="about.html">About Us</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="product.html"><b>Product</b></a>
+                  <a class="nav-link" href="product.html">Product</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="form.html"><b>Form</b></a>
+                  <a class="nav-link" href="form.html">Form</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="login.html"><b>Login</b></a>
+                <li class="nav-item active">
+                  <a class="nav-link" href="login.html">Login</a>
                 </li>
           </ul>
           <form id="search" class="form-inline my-2 my-lg-0">
@@ -42,6 +42,7 @@
           </form>
         </div>
       </nav>
+
       <div class="main">
         <img src="images/formpage-design.jpeg" width="80%" height="20%" />
             <form class="form-login" onsubmit="event.preventDefault(); submitForm();">
@@ -50,7 +51,7 @@
 
                 <label for="user_password">Password</label>
                 <input type="password" id="user_password" name="user_password" placeholder="Enter Password" required><br/><br/>
-
+ 
                 <button class="btnlogin">Login</button>
             </form>
       </div> 
@@ -60,7 +61,20 @@
         <div class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom">
             <div class="container-fluid">
                 <p class="navbar-text pull-left">2021 <i>JADE</i>vents™| Terms and Conditions</p>
-                <a href="#" id = "sitemap" class="navbar-btn btn-danger btn pull-right">Site Map</a>
+                <ul id = 'hide4' class="nav ">
+                  <li class="nav-item">
+                    <a class="nav-link" href='http://facebook.com'><img class = 'footerIcon ' src="images/f_logo_RGB-Blue_58.png"></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href='http://instagram.com'><img class = 'footerIcon' src="images/insta.png"></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href='http://youtube.com'><img class = 'footerIcon' src="images/youtube_social_circle_red.png"></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href='http://whatsapp.com'><img class = 'footerIcon' src="images/whatsapp.png"></a>
+                  </li>
+                </ul>
                
             </div>
         </div>
