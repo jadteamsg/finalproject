@@ -1,8 +1,8 @@
 const createHTMLList = (index, productName, productPrice, productUnit, productDetails, productImage) =>
 `
 <div class="col-lg-4 col-md-6 col-sm-12">
-  <div class="card mb-4">
-      <img id='${index}' src="${productImage}" class="card-img-top" alt="${productName}" data-toggle="modal" data-target="#productModal">
+  <div id='${index}' class="card mb-4" data-toggle="modal" data-target="#productModal">
+      <img src="${productImage}" class="card-img-top" alt="${productName}" >
         <div class="card-body">
           <h5 class="card-title">${productName}</h5>
           <p class="card-text">${productDetails}</p>
