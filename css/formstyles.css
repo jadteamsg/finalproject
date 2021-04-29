@@ -120,6 +120,9 @@ input[type=text], select, textarea,input[type=number]{
     clear: both;
   }
 
+  .footerIcon {
+    height: 30px;
+  }
   	
  
 .modal-content {
@@ -151,6 +154,10 @@ input[type=text], select, textarea,input[type=number]{
     #search,#sitemap{
       display: none;
     }
+
+    #hide4 {
+      display: none;
+  }
     .modal-content {
       flex-direction: column;
       width: 40%;
