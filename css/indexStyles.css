@@ -200,32 +200,30 @@ a:active {
     color: white;
     padding: 10px;
     font-size: 12px;
-}*/
+}
 ​
-/*.section4container{
+.section4container{
     display: flex;
     width: 100%;
     flex-wrap: wrap;
     background-color: grey;
     color: white;
     justify-content: center;
-}*/
+}
 ​
-/* .section4item{
+ .section4item{
     width:15%;
     padding: 30px 30px;
     font-size: 14px;  
-}*/
+}
 ​
-/*.section4item img {
+.section4item img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-}*/
+}
 ​
-/*.secPic{
+.secPic{
     width:100%;
     align-items: center;
 }*/
-
-
