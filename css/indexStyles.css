@@ -148,9 +148,12 @@ a:active {
     }
 
     .subHeading {
-        padding-bottom: 35px;
+
     }
 
+    .featured-cards {
+       margin-top: 20px;
+    }
 }
 .modalText{
     padding: 10px;
@@ -175,7 +178,21 @@ a:active {
 }
 
 .subHeading {
-    padding-top: 35px;
+    padding-top:40px;
+    padding-bottom: 10px;
+}
+
+.featured-cards {
+    transition: transform 0.2s ease;
+    /*box-shadow: 0 4px 6px 0 #929292;*/
+    border-radius: 0;
+    border: 0;
+    /*margin-bottom: 1.5em;*/
+}
+  
+.featured-cards:hover {
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
 /*footer {
