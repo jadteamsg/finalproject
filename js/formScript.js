@@ -6,6 +6,7 @@ function submitForm()
     //pass the input variables
     var productName = document.querySelector("#product_name").value;
     var productPrice =document.querySelector("#product_price").value;
+    var productUnit = document.querySelector("#product_unit").value;
     var productCategory = document.querySelector("#product_category").value;
     var productQuantity = document.querySelector("#product_quantity").value;
     var productDescription = document.querySelector("#product_description").value;
@@ -16,7 +17,7 @@ function submitForm()
     var checkboxArray =document.querySelector("#feature_product").checked; 
 
 
-  addToList(productName,productPrice,productCategory,productQuantity,productDescription,productDetails,productImage,checkboxArray);
+  addToList(productName,productPrice,productUnit,productCategory,productQuantity,productDescription,productDetails,productImage,checkboxArray);
   
 }
 
@@ -45,7 +46,7 @@ function submitForm()
        // $("#addModal").modal();
        swal({
         title:"Items Added Successfully",
-        text:  submitForm(),
+       // text:  submitForm(),
         icon: "success",
         button: "Close",
         });
@@ -53,13 +54,14 @@ function submitForm()
 
 });
 
-function addToList(productName,productPrice,productCategory,productQuantity,productDescription,productDetails,productImage,checkboxArray)
+function addToList(productName,productPrice,productUnit,productCategory,productQuantity,productDescription,productDetails,productImage,checkboxArray)
 {
     //Store the values into the  formlist array 
 
     const item = {
         i_productName: productName,
         i_productPrice: productPrice,
+        i_productUnit:productUnit,
         i_productCategory: productCategory,
         i_productQuantity: productQuantity,
         i_productDescription: productDescription,
