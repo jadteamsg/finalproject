@@ -3,15 +3,18 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <meta name="viewport" content="width=device-width, user-scalable = no">
+    <!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
     <!-- Bootstrap CSS -->
+   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-
+    
     <title>JADEvents - About Us</title>
     <link rel="stylesheet" href="css/aboutStyles.css">
+    
     <link rel="icon" href="images/icons8-rainbow-48.png"><!--added-->
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    
   </head>
   <body>
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
@@ -43,9 +46,209 @@
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
           </form>
         </div>
-      </nav><br/><br/>
-
+      </nav>
+      
+      <div class="jumbotron">
+        <div id="headcontent" class = "row"> 
+         <div class="animated zoomIn">
+            <h2>About Us</h2>
+            <p id="headcontent2">"Team of Aspiring Junior Full Stack Developers..."</p>
+          </div>
+        </div>
+      </div>
+  
       <div class="aboutus-section">
+         <div class="container">
+             <div class="row">
+               <div class="col-lg-3 col-md-4 col-sm-4">
+                <div class="animated bounceInLeft" style="animation-delay: 1s">
+                     <div id ='hide2' class="card bg-secondary border-light p-3 text-center"> 
+                       <div class="card-body">  
+                         <h5 class="card-title"><i><b>Our History</b></i></h5>
+                         <img id="img" src="images/History_icon-280x280.png" class="img-fluid rounded-circle" alt="" width = 100% data-toggle="modal" data-target="#historyModal"/>
+                       </div>
+                       </div> 
+                     </div>   
+                 </div>
+ 
+                 <div  class="col-lg-3 col-md-4 col-sm-4">
+                    <div class="animated bounceInUp" style="animation-delay: 1s">
+                      <div id ='hide2' class="card bg-light border-light p-3 text-center">
+                        <div class="card-body">   
+                         <h5 class="card-title"><i><b>Our project</b></i></h5>
+                         <img id="img" src="images/projectimg.jpg" class="img-fluid rounded-circle" alt="" width = 100% data-toggle="modal" data-target="#projectModal"/>   
+                        </div>
+                      </div>
+                    </div>  
+                 </div>
+                 <div class="col-lg-3 col-md-4 col-sm-4"> 
+                    <div class="animated bounceInDown" style="animation-delay: 1s">
+                       <div id ='hide2' class="card bg-secondary border-light p-3 text-center">
+                         <div class="card-body">     
+                           <h5 class="card-title"><i><b>Our Mission</b></i></h5>
+                           <img id="img" src="images/ourmission.jpg" class="img-fluid rounded-circle" alt="" width = 100% data-toggle="modal" data-target="#missionModal"/> 
+                         </div>
+                         </div>      
+                      </div>
+                 </div>         
+            
+                  <div class="col-lg-3 col-md-4 col-sm-4">
+                    <div class="animated bounceInRight" style="animation-delay: 1s">
+                     <div id ='hide2' class="card bg-light border-light p-3 text-center">
+                       <div class="card-body">    
+                           <h5 class="card-title"><i><b>Our Beliefs</b></i></h5>
+                           <img id="img" src="images/ourbelief.jpg" class="img-fluid rounded-circle" alt="" width = 100% data-toggle="modal" data-target="#ourbelievesModal"/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+             </div>
+           </div> 
+         </div> <br/>
+            <h2 style="text-align:center"><b>Our Team</b></h2><br/>
+         <div class="container">
+          <img id="aboutusimg" src="images/IMG_2502.jpg" class="rounded mx-auto d-block" alt="..." width="100%">
+        </div><br/>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-6"> 
+                <img src="images/dallon.JPG" class="img-fluid rounded-circle" alt=""  style="width:100%"/>  
+            </div> 
+            <div class="col-lg-7 col-md-7 col-sm-6">
+              <div id ='hide2' class="card bg-light border-light p-2 text-center">
+                <div class="card-body">
+                  <div class="animated zoomIn" style="animation-delay: 4s">
+                  <h5 class="card-title"><i><b>Dallon <br/>Team Leader</b></i></h5>
+                  <blockquote class="blockquote">
+                    <p><i>"An aspiring web developer who hopes to be able to provide quality solutions to end-users. 
+                      I believe learning is a lifelong process and we have to constantly stay on top of the changes in order to equip ourselves with the most suitable tools  to meet the challenges ahead."</i></p>
+                  </blockquote>
+                  <a href='http://facebook.com'><img class = 'fbIcon' src="images/facebook.png"></a>
+                </div>
+                </div>
+              </div>  
+            </div> 
+          </div>
+        </div> 
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7 col-md-7 col-sm-6">
+                <div id ='hide2' class="card bg-light border-light p-2 text-center">
+                  <div class="card-body">
+                    <div class="animated zoomIn" style="animation-delay: 5s">
+                    <h5 class="card-title"><i><b>Jace <br/>Team Member</b></i></h5>
+                    <blockquote class="blockquote">
+                      <p><i>"I am inspired by Nelson Mandela's quote that "Everyone can rise above their circumstances and achieve success if they are dedicated to and passionate about what they do." Being a committed and hardworking individual, who enjoys problem solving, especially through the use of technology. I hope to kickstart my career in the tech industry by becoming a junior full stack developer."</i></p>
+                    </blockquote>
+                    <a href='http://facebook.com'><img class = 'fbIcon' src="images/facebook.png"></a>
+                    </div>
+                  </div>
+                </div>  
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-6">
+                  <img src="images/jace_photo2.jpg" class="img-fluid rounded-circle" alt="" style="width:100%"  />
+                </div>
+          </div>
+         </div>
+         <div class="container">
+          <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-6">
+                <img src="images/Alsafrin-photo.jpg" class="img-fluid rounded-circle" alt="" style="width:90%"/>
+              </div> 
+              <div class="col-lg-7 col-md-7 col-sm-6">
+                <div id ='hide2' class="card bg-light border-light p-2 text-center">
+                  <div class="card-body">
+                    <div class="animated zoomIn" style="animation-delay: 6s">
+                      <h5 class="card-title"><i><b>Alsafrin <br/>Team Member</b></i></h5>
+                      <blockquote class="blockquote">
+                        <p>"A few years of programming knowledge and interest made me to join this course to hone my skills.I work efficiently both as an individual contributor as well as along with a team. I seek new challenges and try to think out-of-the-box while looking for creative solutions to a given problem.
+                          I believe in learning from my mistakes and I strongly feel that this virtue will take me ahead in life and career."</i></p>
+                      </blockquote>
+                      <a href='http://facebook.com'><img class = 'fbIcon' src="images/facebook.png"></a>
+                  </div>
+                </div>
+              </div>  
+            </div>
+          </div>
+       </div>
+         <!-- Modal pop up for HISTORY details -->
+         <div class="modal fade" id="historyModal"  tabindex="-1" role="dialog" aria-labelledby="historyModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">   
+            <div class="modal-content">
+               <div class="modal-body">
+                  <hr>
+                  <p class="animated bounceInLeft" id="modalName"><b>Our History</b></p>
+                  <div class="w3-container w3-center w3-animate-zoom">
+                    <blockquote class="blockquote">
+                      <p class="animated zoomIn" id="modalMoreDetails"><i>"Formed in late Mar 2021, We are a team of aspiring developers who joined this Training Programme in hope of forging a career in our area of interest."</i></p> 
+                     </blockquote>  
+                   </div>                    
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal pop up for MISSION details -->
+        <div class="modal fade" id="missionModal"  tabindex="-1" role="dialog" aria-labelledby="missionModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">   
+            <div class="modal-content">
+               <div class="modal-body">
+                  <hr>
+                    <p class="animated bounceInUp" id="modalName"><b>Our Mission</b></p>
+                      <blockquote class="blockquote">
+                        <p class="animated zoomIn"  id="modalMoreDetails"><i>"To provide user-centric, quality web solutions to our end-users."</i></p> 
+                      </blockquote>  
+                </div>                   
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div> 
+          </div>
+        </div>
+         <!-- Modal pop up for Project details -->
+         <div class="modal fade" id="projectModal"  tabindex="-1" role="dialog" aria-labelledby="projectModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">   
+            <div class="modal-content">
+               <div class="modal-body">
+                  <hr>
+                  <p class="animated bounceInDown" id="modalName"><b>Our Project</b></p>
+                    <blockquote class="blockquote">
+                      <p class="animated zoomIn" id="modalMoreDetails"><i>"A one-stop service to parents looking to make any occasion (e.g. baby showers, birthday  parties and kids parties) special & memorable for their family and friends."</i></p> 
+                     </blockquote>                      
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal pop up for our believes details -->
+        <div class="modal fade" id="ourbelievesModal"  tabindex="-1" role="dialog" aria-labelledby="ourbelievesModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">   
+            <div class="modal-content">
+               <div class="modal-body">
+                  <hr>
+                  <p class="animated bounceInRight" id="modalName"><b>Our Believes</b></p>
+                    <blockquote class="blockquote">
+                      <p class="animated zoomIn" id="modalMoreDetails"><i>“The secret of joy in work is contained in one word – <b>excellence</b>. To know how to do something well is to enjoy it.”</i></p>
+                      <p class="animated zoomIn" id="modalbeliefDetails">     
+                        <i><b> Teamwork</b><br>
+                        <b>  Growth Mindset</b><br>
+                        <b>  Trust</b><br>
+                        <b> Personal Responsibility</b></i>
+                      </p> 
+                     </blockquote>                      
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+     <!--<div class="aboutus-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-2 col-sm-4">
@@ -57,7 +260,7 @@
                           </p>
                         <h5>Our Mission</h5>
                         <p class="aboutus-text">To provide user-centric, quality web solutions to our end-users.</p>
-                        <!--<a class="aboutus-more" href="#">read more</a>-->
+                      
                         <h5>Our Project</h5>
                             <p>A one-stop service to parents looking to make any occasion (e.g. baby showers, birthday  parties and kids parties) special & memorable for their family and friends.
                             </p>
@@ -96,7 +299,7 @@
           <div class="col-lg-4 col-md-2 col-sm-6">
             <div class="card h-50">
               <img src="images/jace_photo2.jpg" alt="Jane" style="width:100%">
-            <!--<div class="fakeimg" style="height:200px;">Image</div>-->
+            
             <h3>Jace</h3>
             <p><b>Team Member</b></p>
             <p class="aboutus-content">I am inspired by Nelson Mandela's quote that "Everyone can rise above their circumstances and achieve success if they are dedicated to and passionate about what they do." Being a committed and hardworking individual, who enjoys problem solving, especially through the use of technology. I hope to kickstart my career in the tech industry by becoming a junior full stack developer.
@@ -106,7 +309,7 @@
           <div class="col-lg-4 col-md-2 col-sm-6">
             <div class="card h-50">
               <img src="images/dallon.JPG" alt="Jane" style="width:100%">
-            <!--<div class="fakeimg" style="height:200px;">Image</div>--> 
+            
                 <h3>Dallon</h3>
                 <p><b>Team Leader</b></p>
                <p class="aboutus-content">An aspiring web developer who hopes to be able to provide quality solutions to end-users. 
@@ -117,7 +320,6 @@
           <div class="col-lg-4 col-md-2 col-sm-6">
             <div class="card h-50">
               <img src="images/Alsafrin-photo.jpg" alt="Jane" style="width:100%">
-           <!--<div class="fakeimg" style="height:200px;">Image</div>--> 
             <h3>Alsafrin</h3>
             <p><b>Team Member</b></p>
             <p class="aboutus-content">I work efficiently both as an individual contributor as well as along with a team. I seek new challenges and try to think out-of-the-box while looking for creative solutions to a given problem.
@@ -126,7 +328,7 @@
             </div>
           </div> 
         </div>
-      </div>
+      </div>--> 
       
       <div class = "container-fluid bg-secondary text-white">
         <div class = "row">
