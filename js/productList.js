@@ -34,7 +34,7 @@ function loadData()
     productsControl.addItem("Photography Services", 120, "/hour", "All softcopy photos returned", "images/photo_svc.jpg",
     "Professional photography service to capture your precious moments<br><br>Price includes: <ul><li>80 Polaroid photos</li><li>All softcopy photos will be returned</li><li>Min. 2 hours</li></ul>","services");
 
-    productsControl.addItem("Balloon Scuplting Services", 120, "/hour", "Up to 120 balloon scupltures", "images/balloon_sculpting.jpg",
+    productsControl.addItem("Balloon Sculpting Services", 120, "/hour", "Up to 120 balloon scupltures", "images/balloon_sculpting.jpg",
     "Thrill the kids with personal balloon scupltures that they can bring home<br><br>Price includes:<ul><li>Upto 120 simple balloon scupltures</li><li>Min. 1 hour</li></ul>","services");
 
     productsControl.addItem("Magic Performances", 150, "/show", "Live performance with streaming", "images/magic.jpg",
