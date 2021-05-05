@@ -1,6 +1,6 @@
 const createHTMLList = (index, productName, productPrice, productUnit, productDetails, productImage) =>
 `
-<div class="col-lg-4 col-md-6 col-sm-12">
+<div class="col-lg-4 col-md-6 col-sm-12 scrollanimation animated fadeInUp adl-1">
   <div id='${index}' class="card mb-4" data-toggle="modal" data-target="#productModal">
       <img src="${productImage}" class="card-img-top" alt="${productName}" >
         <div class="card-body">
@@ -102,6 +102,20 @@ class ProductsController
           const item = this._items[i];
           document.getElementById(i).addEventListener("click", function(){displayProductDetails(item);});
         }
+
+        /*addEventListener - animate on scroll
+          var container = document.querySelector('.rotateInDownLeft scrollanimation animated');
+          container.addEventListener('scroll', function () {
+          sections.forEach((e, i) => {
+          var top = (e.getBoundingClientRect().top);
+          if (top == 0) {
+          e.classList.add('is-inview')
+          } else {
+          e.classList.remove('is-inview')
+          }
+          });
+          })
+          container.dispatchEvent(newCustomEvent('scroll'));*/
     }
 }
 
