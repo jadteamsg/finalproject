@@ -1,56 +1,57 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif; 
+ /* font-size: 16px;*/
+  background-image:url('../images/form-background-design.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0px;
+  height: 100%;
 }
 
 .aboutus-section {
-  padding: 50px 0;
+  padding: 10px 0;
+  margin-top: 60px;
 }
-.aboutus h5{
+/*.aboutus h5{
   font: size 20px; 
   font-weight: bold;
 }
 .aboutus-title {
-  font-size: 25px;
+  font-size: 22px;
   letter-spacing: 0;
-  line-height: 30px;
+  line-height: 10px;
   margin: 0 0 25px;
   padding: 0 0 10px;
   position: relative;
   text-transform: uppercase;
   color: #000;
-}
-
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 8px;
-  text-align: center;
-}
-.card p{
-  margin: 2px 1px;
-}
-
-
-/*.aboutus-text {
-  color: #606060;
-  font-size: 13px;
-  line-height: 22px;
-  margin: 0 0 35px;
 }*/
 
-/*.aboutus-more {
-  border: 1px solid #fdb801;
-  border-radius: 25px;
-  color: #fdb801;
-  display: inline-block;
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 0;
-  padding: 7px 20px;
-  text-transform: uppercase;
-}*/
+a {
+    color: white;
+}
+a:link {
+    text-decoration: none;
+    color: white;
+}
+  
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+  
+a:hover {
+    text-decoration: none;
+}
+  
+a:active {
+    text-decoration: none;
+}
 
-.feature-content h4 {
+
+/*.feature-content h4 {
   color: #0f0f0f;
   font-size: 18px;
   font-weight: bold;
@@ -60,22 +61,21 @@ body {
 }
 
  .feature-content {
-  /*float: left;*/
   padding-left: 28px;
-  width: 78%;
+  width: 90%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
 }
  .feature-content p {
   color: #606060;
   font-size: 14px;
   line-height: 20px;
 }
-
-
-.fakeimg{
-  background-color: #aaa;
-  width: 80%;
-  padding:20px;
+#bannerimg{
+  padding: 35px;
 }
+
+
 .aboutus-content{
   color: #606060;
   font-size: 15px;
@@ -83,7 +83,7 @@ body {
   font-weight:inherit;
   margin-right: 70px;
   
-}
+}*/
 .section4item{
   width:15%;
   padding: 30px 30px;
@@ -101,21 +101,136 @@ body {
   align-items: center;
 }
 
-@media screen and (max-width: 700px) {
+.footerIcon {
+  height: 30px;
+}
+
+/*.aboutus-banner img{
+  width: 100%;
+  height: auto;
+}*/
+    .jumbotron{
+
+      background-image:url('../images/Birdie.PNG');
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      margin-top: 72px;
+      padding: 150px;
+     
+    }
+    .jumbotron h2{
+      text-align: center;
+      font-size:35px;
+
+    }
+    .jumbotron p{
+      font-size:25px;
+      font-weight: bold;
+      text-align: justify;
+    }
+    
+    .card {
+      transition: transform 0.2s ease;
+      box-shadow: 0 4px 6px 0 #929292;
+      border-radius: 0;
+      border: 0;
+      margin-bottom: 1.5em;
+      align-items: center;
+      
+    }
+    
+    .card:hover {
+      transform: scale(1.05);
+     /* cursor: pointer;*/
+    }
+    #img{
+      cursor: pointer;
+    }
+    .teamImgContent1{
+      padding: 20px;
+      text-align:start;
+    }
+    .teamImgContent2{
+      padding: 50px;
+      text-align:end;
+    }
+    
+    .teamImgContent3{
+      padding: 50px;
+      text-align:start;
+    }
+    .fbIcon{
+      height: 30px;
+    }
+    #modalName{
+      font-size: x-large;
+      font-weight: bold;
+      font-style: italic;
+    }
+    #modalMoreDetails{
+      text-align:  left;
+    }
+    #modalbeliefDetails{
+      text-align: center;
+    }
+        /*added*/
+    h1, h2, h3, h4, h5 {
+      font-weight:bold;
+    }
+
+  
+@media screen and (max-width: 1000px) {
   #search,#sitemap{
     display: none;
   }
+  /*
   .aboutus-banner img{
-    width: 280px;
+    width: 100%;
     height: auto;
-  }
-  #bannerimg-aboutus{
+  }*/
+ /* #bannerimg-aboutus{
     width: 300px;
   }
   .feature-content{
     justify-content: flex-start;
-  }
-  
-} 
+  }*/
+  #hide4 {
+    display: none;
+}
 
+  .hide {
+    display: none;
+}
+
+#footerSection {
+  display: none;
+}
+.jumbotron{
+
+  background-image:url('../images/Birdie.PNG');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  margin-top: 72px;
+  padding: 40px;
+ 
+}
+.jumbotron p{
+  font-size:18px;
+  font-weight: bold;
+}
+.aboutus-section
+{
+  padding: 10px 0;
+  margin-top: 30px;
+}
+.jumbotron h2{
+
+  font-size:25px;
+
+}
+
+
+} 
 
